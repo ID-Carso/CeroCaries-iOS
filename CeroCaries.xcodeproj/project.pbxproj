@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772D78FE24901C0100ED1DF4 /* LNCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D78FD24901C0100ED1DF4 /* LNCategoryViewController.swift */; };
+		772D790024904C4F00ED1DF4 /* LNWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D78FF24904C4F00ED1DF4 /* LNWelcomeViewController.swift */; };
+		772D79022490836900ED1DF4 /* DEHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D79012490836800ED1DF4 /* DEHomeViewController.swift */; };
+		772D79042497FF5C00ED1DF4 /* DECalendarMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D79032497FF5B00ED1DF4 /* DECalendarMenuViewController.swift */; };
+		776DB27A2475AA8000386CAC /* LNCreateAccountViewCointroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DB2792475AA8000386CAC /* LNCreateAccountViewCointroller.swift */; };
+		776DB27C2475EA4000386CAC /* LNTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DB27B2475EA4000386CAC /* LNTermsViewController.swift */; };
+		776DB285247814F400386CAC /* GPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DB284247814F400386CAC /* GPHomeViewController.swift */; };
+		776DB288247862FF00386CAC /* GPInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DB287247862FF00386CAC /* GPInfoViewController.swift */; };
 		7777EABC246EE6D600848384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777EABB246EE6D600848384 /* AppDelegate.swift */; };
 		7777EABE246EE6D600848384 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777EABD246EE6D600848384 /* SceneDelegate.swift */; };
-		7777EAC0246EE6D600848384 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777EABF246EE6D600848384 /* ViewController.swift */; };
+		7777EAC0246EE6D600848384 /* LNHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777EABF246EE6D600848384 /* LNHomeViewController.swift */; };
 		7777EAC3246EE6D700848384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7777EAC1246EE6D700848384 /* Main.storyboard */; };
 		7777EAC6246EE6D700848384 /* CeroCaries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7777EAC4246EE6D700848384 /* CeroCaries.xcdatamodeld */; };
 		7777EAC8246EE6DA00848384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7777EAC7246EE6DA00848384 /* Assets.xcassets */; };
 		7777EACB246EE6DA00848384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7777EAC9246EE6DA00848384 /* LaunchScreen.storyboard */; };
 		7777EAD6246EE6DB00848384 /* CeroCariesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777EAD5246EE6DB00848384 /* CeroCariesTests.swift */; };
 		7777EAE1246EE6DB00848384 /* CeroCariesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777EAE0246EE6DB00848384 /* CeroCariesUITests.swift */; };
+		7777EAEF2473332600848384 /* LNLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777EAEE2473332500848384 /* LNLoginViewController.swift */; };
+		7777EAF12474AC5400848384 /* LNRecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777EAF02474AC5200848384 /* LNRecoverPasswordViewController.swift */; };
+		7777EAF32474C91C00848384 /* LNRecoverPassAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777EAF22474C91C00848384 /* LNRecoverPassAlertViewController.swift */; };
+		777B15ED247C7019007D8877 /* GPInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B15EC247C7019007D8877 /* GPInfoTableViewCell.swift */; };
+		777B15EF247C9692007D8877 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B15EE247C9692007D8877 /* BaseViewController.swift */; };
+		777B162C2485BEAF007D8877 /* LNSlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B162B2485BEAF007D8877 /* LNSlideMenuViewController.swift */; };
+		77B1E4522486D5B900CE962A /* LNInstitutionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */; };
+		77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4532487557300CE962A /* GPChildrenViewController.swift */; };
+		77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */; };
+		77B1E458248F089300CE962A /* LNSlideConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E457248F089300CE962A /* LNSlideConfigViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +54,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		772D78FD24901C0100ED1DF4 /* LNCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNCategoryViewController.swift; sourceTree = "<group>"; };
+		772D78FF24904C4F00ED1DF4 /* LNWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNWelcomeViewController.swift; sourceTree = "<group>"; };
+		772D79012490836800ED1DF4 /* DEHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEHomeViewController.swift; sourceTree = "<group>"; };
+		772D79032497FF5B00ED1DF4 /* DECalendarMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DECalendarMenuViewController.swift; sourceTree = "<group>"; };
+		776DB2792475AA8000386CAC /* LNCreateAccountViewCointroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNCreateAccountViewCointroller.swift; sourceTree = "<group>"; };
+		776DB27B2475EA4000386CAC /* LNTermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNTermsViewController.swift; sourceTree = "<group>"; };
+		776DB284247814F400386CAC /* GPHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPHomeViewController.swift; sourceTree = "<group>"; };
+		776DB287247862FF00386CAC /* GPInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPInfoViewController.swift; sourceTree = "<group>"; };
 		7777EAB8246EE6D600848384 /* CeroCaries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeroCaries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7777EABB246EE6D600848384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7777EABD246EE6D600848384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7777EABF246EE6D600848384 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7777EABF246EE6D600848384 /* LNHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNHomeViewController.swift; sourceTree = "<group>"; };
 		7777EAC2246EE6D700848384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7777EAC5246EE6D700848384 /* CeroCaries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CeroCaries.xcdatamodel; sourceTree = "<group>"; };
 		7777EAC7246EE6DA00848384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +77,16 @@
 		7777EADC246EE6DB00848384 /* CeroCariesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeroCariesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7777EAE0246EE6DB00848384 /* CeroCariesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeroCariesUITests.swift; sourceTree = "<group>"; };
 		7777EAE2246EE6DB00848384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7777EAEE2473332500848384 /* LNLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNLoginViewController.swift; sourceTree = "<group>"; };
+		7777EAF02474AC5200848384 /* LNRecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNRecoverPasswordViewController.swift; sourceTree = "<group>"; };
+		7777EAF22474C91C00848384 /* LNRecoverPassAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNRecoverPassAlertViewController.swift; sourceTree = "<group>"; };
+		777B15EC247C7019007D8877 /* GPInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPInfoTableViewCell.swift; sourceTree = "<group>"; };
+		777B15EE247C9692007D8877 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		777B162B2485BEAF007D8877 /* LNSlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNSlideMenuViewController.swift; sourceTree = "<group>"; };
+		77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNInstitutionsViewController.swift; sourceTree = "<group>"; };
+		77B1E4532487557300CE962A /* GPChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPChildrenViewController.swift; sourceTree = "<group>"; };
+		77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPMedicalRecordViewController.swift; sourceTree = "<group>"; };
+		77B1E457248F089300CE962A /* LNSlideConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNSlideConfigViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +114,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		776DB27D247807DE00386CAC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				776DB27E2478083800386CAC /* LogIn */,
+				776DB2832478148900386CAC /* GeneralPublic */,
+				777B162E24862F65007D8877 /* NoRegister */,
+				777B162D24862EB8007D8877 /* Dentist */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		776DB27E2478083800386CAC /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				7777EABF246EE6D600848384 /* LNHomeViewController.swift */,
+				7777EAF02474AC5200848384 /* LNRecoverPasswordViewController.swift */,
+				7777EAEE2473332500848384 /* LNLoginViewController.swift */,
+				7777EAF22474C91C00848384 /* LNRecoverPassAlertViewController.swift */,
+				776DB2792475AA8000386CAC /* LNCreateAccountViewCointroller.swift */,
+				776DB27B2475EA4000386CAC /* LNTermsViewController.swift */,
+				77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */,
+				777B162B2485BEAF007D8877 /* LNSlideMenuViewController.swift */,
+				77B1E457248F089300CE962A /* LNSlideConfigViewController.swift */,
+				772D78FD24901C0100ED1DF4 /* LNCategoryViewController.swift */,
+				772D78FF24904C4F00ED1DF4 /* LNWelcomeViewController.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		776DB27F24780BAD00386CAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7777EAC1246EE6D700848384 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		776DB2832478148900386CAC /* GeneralPublic */ = {
+			isa = PBXGroup;
+			children = (
+				776DB287247862FF00386CAC /* GPInfoViewController.swift */,
+				777B15EC247C7019007D8877 /* GPInfoTableViewCell.swift */,
+				776DB284247814F400386CAC /* GPHomeViewController.swift */,
+				77B1E4532487557300CE962A /* GPChildrenViewController.swift */,
+				77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */,
+			);
+			path = GeneralPublic;
+			sourceTree = "<group>";
+		};
 		7777EAAF246EE6D600848384 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +186,11 @@
 		7777EABA246EE6D600848384 /* CeroCaries */ = {
 			isa = PBXGroup;
 			children = (
+				776DB27F24780BAD00386CAC /* Views */,
+				776DB27D247807DE00386CAC /* Controllers */,
 				7777EABB246EE6D600848384 /* AppDelegate.swift */,
 				7777EABD246EE6D600848384 /* SceneDelegate.swift */,
-				7777EABF246EE6D600848384 /* ViewController.swift */,
-				7777EAC1246EE6D700848384 /* Main.storyboard */,
+				777B15EE247C9692007D8877 /* BaseViewController.swift */,
 				7777EAC7246EE6DA00848384 /* Assets.xcassets */,
 				7777EAC9246EE6DA00848384 /* LaunchScreen.storyboard */,
 				7777EACC246EE6DA00848384 /* Info.plist */,
@@ -129,6 +215,22 @@
 				7777EAE2246EE6DB00848384 /* Info.plist */,
 			);
 			path = CeroCariesUITests;
+			sourceTree = "<group>";
+		};
+		777B162D24862EB8007D8877 /* Dentist */ = {
+			isa = PBXGroup;
+			children = (
+				772D79012490836800ED1DF4 /* DEHomeViewController.swift */,
+				772D79032497FF5B00ED1DF4 /* DECalendarMenuViewController.swift */,
+			);
+			path = Dentist;
+			sourceTree = "<group>";
+		};
+		777B162E24862F65007D8877 /* NoRegister */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NoRegister;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +364,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7777EAC0246EE6D600848384 /* ViewController.swift in Sources */,
+				777B15EF247C9692007D8877 /* BaseViewController.swift in Sources */,
+				7777EAF12474AC5400848384 /* LNRecoverPasswordViewController.swift in Sources */,
+				772D78FE24901C0100ED1DF4 /* LNCategoryViewController.swift in Sources */,
+				776DB285247814F400386CAC /* GPHomeViewController.swift in Sources */,
+				7777EAF32474C91C00848384 /* LNRecoverPassAlertViewController.swift in Sources */,
+				772D790024904C4F00ED1DF4 /* LNWelcomeViewController.swift in Sources */,
+				772D79042497FF5C00ED1DF4 /* DECalendarMenuViewController.swift in Sources */,
+				77B1E4522486D5B900CE962A /* LNInstitutionsViewController.swift in Sources */,
+				776DB288247862FF00386CAC /* GPInfoViewController.swift in Sources */,
+				7777EAC0246EE6D600848384 /* LNHomeViewController.swift in Sources */,
 				7777EABC246EE6D600848384 /* AppDelegate.swift in Sources */,
+				77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */,
+				777B162C2485BEAF007D8877 /* LNSlideMenuViewController.swift in Sources */,
+				776DB27C2475EA4000386CAC /* LNTermsViewController.swift in Sources */,
 				7777EABE246EE6D600848384 /* SceneDelegate.swift in Sources */,
+				77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */,
+				7777EAEF2473332600848384 /* LNLoginViewController.swift in Sources */,
+				777B15ED247C7019007D8877 /* GPInfoTableViewCell.swift in Sources */,
+				776DB27A2475AA8000386CAC /* LNCreateAccountViewCointroller.swift in Sources */,
+				772D79022490836900ED1DF4 /* DEHomeViewController.swift in Sources */,
+				77B1E458248F089300CE962A /* LNSlideConfigViewController.swift in Sources */,
 				7777EAC6246EE6D700848384 /* CeroCaries.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +561,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NC33XRP56U;
 				INFOPLIST_FILE = CeroCaries/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +580,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NC33XRP56U;
 				INFOPLIST_FILE = CeroCaries/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

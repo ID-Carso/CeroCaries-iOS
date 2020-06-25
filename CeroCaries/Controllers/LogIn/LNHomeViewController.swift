@@ -8,13 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class LNHomeViewController: BaseViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //Disable DarkMode for placeholder
+        disableDarkMode()
+        //NavigationBarConfig
+        imageNavBar()
+        
+        
     }
+    
 
 
 }
+
 
