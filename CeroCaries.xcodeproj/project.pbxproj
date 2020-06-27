@@ -30,6 +30,12 @@
 		777B15ED247C7019007D8877 /* GPInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B15EC247C7019007D8877 /* GPInfoTableViewCell.swift */; };
 		777B15EF247C9692007D8877 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B15EE247C9692007D8877 /* BaseViewController.swift */; };
 		777B162C2485BEAF007D8877 /* LNSlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B162B2485BEAF007D8877 /* LNSlideMenuViewController.swift */; };
+		779B5E3924A6556400D87B1B /* NRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E3824A6556300D87B1B /* NRHomeViewController.swift */; };
+		779B5E3C24A666CC00D87B1B /* SLHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E3B24A666CB00D87B1B /* SLHomeViewController.swift */; };
+		779B5E3E24A66BE700D87B1B /* SLInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E3D24A66BE700D87B1B /* SLInfoViewController.swift */; };
+		779B5E4024A685FC00D87B1B /* SLInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E3F24A685FC00D87B1B /* SLInfoTableViewCell.swift */; };
+		779B5E4224A6A50500D87B1B /* NRInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E4124A6A50400D87B1B /* NRInfoViewController.swift */; };
+		779B5E4424A6A93F00D87B1B /* NRInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E4324A6A93F00D87B1B /* NRInfoTableViewCell.swift */; };
 		77B1E4522486D5B900CE962A /* LNInstitutionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */; };
 		77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4532487557300CE962A /* GPChildrenViewController.swift */; };
 		77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */; };
@@ -83,6 +89,12 @@
 		777B15EC247C7019007D8877 /* GPInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPInfoTableViewCell.swift; sourceTree = "<group>"; };
 		777B15EE247C9692007D8877 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		777B162B2485BEAF007D8877 /* LNSlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNSlideMenuViewController.swift; sourceTree = "<group>"; };
+		779B5E3824A6556300D87B1B /* NRHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRHomeViewController.swift; sourceTree = "<group>"; };
+		779B5E3B24A666CB00D87B1B /* SLHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLHomeViewController.swift; sourceTree = "<group>"; };
+		779B5E3D24A66BE700D87B1B /* SLInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLInfoViewController.swift; sourceTree = "<group>"; };
+		779B5E3F24A685FC00D87B1B /* SLInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLInfoTableViewCell.swift; sourceTree = "<group>"; };
+		779B5E4124A6A50400D87B1B /* NRInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRInfoViewController.swift; sourceTree = "<group>"; };
+		779B5E4324A6A93F00D87B1B /* NRInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRInfoTableViewCell.swift; sourceTree = "<group>"; };
 		77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNInstitutionsViewController.swift; sourceTree = "<group>"; };
 		77B1E4532487557300CE962A /* GPChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPChildrenViewController.swift; sourceTree = "<group>"; };
 		77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPMedicalRecordViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +129,7 @@
 		776DB27D247807DE00386CAC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				779B5E3A24A6662E00D87B1B /* School */,
 				776DB27E2478083800386CAC /* LogIn */,
 				776DB2832478148900386CAC /* GeneralPublic */,
 				777B162E24862F65007D8877 /* NoRegister */,
@@ -229,8 +242,21 @@
 		777B162E24862F65007D8877 /* NoRegister */ = {
 			isa = PBXGroup;
 			children = (
+				779B5E3824A6556300D87B1B /* NRHomeViewController.swift */,
+				779B5E4124A6A50400D87B1B /* NRInfoViewController.swift */,
+				779B5E4324A6A93F00D87B1B /* NRInfoTableViewCell.swift */,
 			);
 			path = NoRegister;
+			sourceTree = "<group>";
+		};
+		779B5E3A24A6662E00D87B1B /* School */ = {
+			isa = PBXGroup;
+			children = (
+				779B5E3B24A666CB00D87B1B /* SLHomeViewController.swift */,
+				779B5E3D24A66BE700D87B1B /* SLInfoViewController.swift */,
+				779B5E3F24A685FC00D87B1B /* SLInfoTableViewCell.swift */,
+			);
+			path = School;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,10 +390,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779B5E4024A685FC00D87B1B /* SLInfoTableViewCell.swift in Sources */,
 				777B15EF247C9692007D8877 /* BaseViewController.swift in Sources */,
 				7777EAF12474AC5400848384 /* LNRecoverPasswordViewController.swift in Sources */,
 				772D78FE24901C0100ED1DF4 /* LNCategoryViewController.swift in Sources */,
 				776DB285247814F400386CAC /* GPHomeViewController.swift in Sources */,
+				779B5E3C24A666CC00D87B1B /* SLHomeViewController.swift in Sources */,
 				7777EAF32474C91C00848384 /* LNRecoverPassAlertViewController.swift in Sources */,
 				772D790024904C4F00ED1DF4 /* LNWelcomeViewController.swift in Sources */,
 				772D79042497FF5C00ED1DF4 /* DECalendarMenuViewController.swift in Sources */,
@@ -377,15 +405,19 @@
 				7777EABC246EE6D600848384 /* AppDelegate.swift in Sources */,
 				77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */,
 				777B162C2485BEAF007D8877 /* LNSlideMenuViewController.swift in Sources */,
+				779B5E4424A6A93F00D87B1B /* NRInfoTableViewCell.swift in Sources */,
 				776DB27C2475EA4000386CAC /* LNTermsViewController.swift in Sources */,
 				7777EABE246EE6D600848384 /* SceneDelegate.swift in Sources */,
+				779B5E3E24A66BE700D87B1B /* SLInfoViewController.swift in Sources */,
 				77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */,
 				7777EAEF2473332600848384 /* LNLoginViewController.swift in Sources */,
+				779B5E3924A6556400D87B1B /* NRHomeViewController.swift in Sources */,
 				777B15ED247C7019007D8877 /* GPInfoTableViewCell.swift in Sources */,
 				776DB27A2475AA8000386CAC /* LNCreateAccountViewCointroller.swift in Sources */,
 				772D79022490836900ED1DF4 /* DEHomeViewController.swift in Sources */,
 				77B1E458248F089300CE962A /* LNSlideConfigViewController.swift in Sources */,
 				7777EAC6246EE6D700848384 /* CeroCaries.xcdatamodeld in Sources */,
+				779B5E4224A6A50500D87B1B /* NRInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

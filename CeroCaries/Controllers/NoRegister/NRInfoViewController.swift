@@ -1,15 +1,14 @@
 //
-//  InfoTutorialViewController.swift
+//  NRInfoViewController.swift
 //  CeroCaries
 //
-//  Created by Ricardo Olea on 22/05/20.
+//  Created by Ricardo Olea on 26/06/20.
 //  Copyright © 2020 Ricardo Olea. All rights reserved.
 //
 
 import UIKit
 
-class GPInfoViewController: BaseViewController{
-    
+class NRInfoViewController: BaseViewController {
     
     @IBOutlet weak var tableSection: UITableView!
     
@@ -43,7 +42,7 @@ class GPInfoViewController: BaseViewController{
 }
 
 // MARK: - UITableView
-extension GPInfoViewController: UITableViewDelegate, UITableViewDataSource{
+extension NRInfoViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sections.count
@@ -51,7 +50,7 @@ extension GPInfoViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! GPInfoTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! NRInfoTableViewCell
         
         cell.titleSection.text = sections[indexPath.row]
         

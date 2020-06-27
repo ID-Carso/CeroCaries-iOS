@@ -1,18 +1,17 @@
 //
-//  InfoTableViewCell.swift
+//  NRInfoTableViewCell.swift
 //  CeroCaries
 //
-//  Created by Ricardo Olea on 25/05/20.
+//  Created by Ricardo Olea on 26/06/20.
 //  Copyright © 2020 Ricardo Olea. All rights reserved.
 //
 
 import UIKit
 
-class GPInfoTableViewCell: UITableViewCell {
-    
+class NRInfoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleSection: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
