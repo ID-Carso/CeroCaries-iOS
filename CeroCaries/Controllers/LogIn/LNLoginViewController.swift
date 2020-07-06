@@ -18,7 +18,8 @@ class LNLoginViewController: BaseViewController {
         disableDarkMode()
         //NavigationBarConfig
         imageNavBar()
-        
+        //Hidekeyboard TextField
+        self.hideKeyboardWhenTappedAround()
         
     }
    

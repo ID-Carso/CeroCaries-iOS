@@ -40,6 +40,7 @@
 		779B5E4824ACC81D00D87B1B /* GPCalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E4724ACC81C00D87B1B /* GPCalendarComponent.swift */; };
 		779B5E4A24ACC87600D87B1B /* GPDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E4924ACC87600D87B1B /* GPDateCollectionViewCell.swift */; };
 		779B5E4C24AD96BF00D87B1B /* GPCalendarDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E4B24AD96BF00D87B1B /* GPCalendarDateViewController.swift */; };
+		779B5E4E24AE733500D87B1B /* GPUploadProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E4D24AE733400D87B1B /* GPUploadProfileViewController.swift */; };
 		77B1E4522486D5B900CE962A /* LNInstitutionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */; };
 		77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4532487557300CE962A /* GPChildrenViewController.swift */; };
 		77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */; };
@@ -103,6 +104,7 @@
 		779B5E4724ACC81C00D87B1B /* GPCalendarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPCalendarComponent.swift; sourceTree = "<group>"; };
 		779B5E4924ACC87600D87B1B /* GPDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		779B5E4B24AD96BF00D87B1B /* GPCalendarDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPCalendarDateViewController.swift; sourceTree = "<group>"; };
+		779B5E4D24AE733400D87B1B /* GPUploadProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUploadProfileViewController.swift; sourceTree = "<group>"; };
 		77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNInstitutionsViewController.swift; sourceTree = "<group>"; };
 		77B1E4532487557300CE962A /* GPChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPChildrenViewController.swift; sourceTree = "<group>"; };
 		77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPMedicalRecordViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				779B5E4724ACC81C00D87B1B /* GPCalendarComponent.swift */,
 				779B5E4924ACC87600D87B1B /* GPDateCollectionViewCell.swift */,
 				779B5E4B24AD96BF00D87B1B /* GPCalendarDateViewController.swift */,
+				779B5E4D24AE733400D87B1B /* GPUploadProfileViewController.swift */,
 			);
 			path = GeneralPublic;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				776DB288247862FF00386CAC /* GPInfoViewController.swift in Sources */,
 				7777EAC0246EE6D600848384 /* LNHomeViewController.swift in Sources */,
 				7777EABC246EE6D600848384 /* AppDelegate.swift in Sources */,
+				779B5E4E24AE733500D87B1B /* GPUploadProfileViewController.swift in Sources */,
 				77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */,
 				777B162C2485BEAF007D8877 /* LNSlideMenuViewController.swift in Sources */,
 				779B5E4424A6A93F00D87B1B /* NRInfoTableViewCell.swift in Sources */,
