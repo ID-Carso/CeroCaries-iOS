@@ -42,10 +42,12 @@ class LNCreateAccountViewController : BaseViewController {
         _ = configTextView(view: viewNickName)
         _ = configTextView(view: viewEmail)
         _ = configTextView(view: viewPass)
+        //Hidekeyboard TextField
+        self.hideKeyboardWhenTappedAround()
         
         
     }
-    
+
     func configTextView(view: UIView) -> UIView{
         view.layer.borderWidth = 1.5
         view.layer.cornerRadius = 17
