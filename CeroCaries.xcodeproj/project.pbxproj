@@ -41,6 +41,8 @@
 		779B5E4A24ACC87600D87B1B /* GPDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E4924ACC87600D87B1B /* GPDateCollectionViewCell.swift */; };
 		779B5E4C24AD96BF00D87B1B /* GPCalendarDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E4B24AD96BF00D87B1B /* GPCalendarDateViewController.swift */; };
 		779B5E4E24AE733500D87B1B /* GPUploadProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E4D24AE733400D87B1B /* GPUploadProfileViewController.swift */; };
+		779B5E7024B3C61A00D87B1B /* DECalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E6F24B3C61900D87B1B /* DECalendarViewController.swift */; };
+		779B5E7224B3FF1E00D87B1B /* DEDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E7124B3FF1E00D87B1B /* DEDateCollectionViewCell.swift */; };
 		77B1E4522486D5B900CE962A /* LNInstitutionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */; };
 		77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4532487557300CE962A /* GPChildrenViewController.swift */; };
 		77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */; };
@@ -105,6 +107,8 @@
 		779B5E4924ACC87600D87B1B /* GPDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		779B5E4B24AD96BF00D87B1B /* GPCalendarDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPCalendarDateViewController.swift; sourceTree = "<group>"; };
 		779B5E4D24AE733400D87B1B /* GPUploadProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUploadProfileViewController.swift; sourceTree = "<group>"; };
+		779B5E6F24B3C61900D87B1B /* DECalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DECalendarViewController.swift; sourceTree = "<group>"; };
+		779B5E7124B3FF1E00D87B1B /* DEDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNInstitutionsViewController.swift; sourceTree = "<group>"; };
 		77B1E4532487557300CE962A /* GPChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPChildrenViewController.swift; sourceTree = "<group>"; };
 		77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPMedicalRecordViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +254,8 @@
 			children = (
 				772D79012490836800ED1DF4 /* DEHomeViewController.swift */,
 				772D79032497FF5B00ED1DF4 /* DECalendarMenuViewController.swift */,
+				779B5E6F24B3C61900D87B1B /* DECalendarViewController.swift */,
+				779B5E7124B3FF1E00D87B1B /* DEDateCollectionViewCell.swift */,
 			);
 			path = Dentist;
 			sourceTree = "<group>";
@@ -406,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				779B5E4024A685FC00D87B1B /* SLInfoTableViewCell.swift in Sources */,
+				779B5E7024B3C61A00D87B1B /* DECalendarViewController.swift in Sources */,
 				777B15EF247C9692007D8877 /* BaseViewController.swift in Sources */,
 				779B5E4824ACC81D00D87B1B /* GPCalendarComponent.swift in Sources */,
 				7777EAF12474AC5400848384 /* LNRecoverPasswordViewController.swift in Sources */,
@@ -413,6 +420,7 @@
 				776DB285247814F400386CAC /* GPHomeViewController.swift in Sources */,
 				779B5E3C24A666CC00D87B1B /* SLHomeViewController.swift in Sources */,
 				7777EAF32474C91C00848384 /* LNRecoverPassAlertViewController.swift in Sources */,
+				779B5E7224B3FF1E00D87B1B /* DEDateCollectionViewCell.swift in Sources */,
 				772D790024904C4F00ED1DF4 /* LNWelcomeViewController.swift in Sources */,
 				772D79042497FF5C00ED1DF4 /* DECalendarMenuViewController.swift in Sources */,
 				77B1E4522486D5B900CE962A /* LNInstitutionsViewController.swift in Sources */,
