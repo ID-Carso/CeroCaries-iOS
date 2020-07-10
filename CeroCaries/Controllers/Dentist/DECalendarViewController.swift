@@ -8,6 +8,8 @@
 
 import UIKit
 
+var dateStringDentist = ""
+
 class DECalendarViewController: BaseViewController, UICollectionViewDelegate,UICollectionViewDataSource {
 
     @IBOutlet weak var viewCalendar: UIView!
@@ -206,11 +208,11 @@ class DECalendarViewController: BaseViewController, UICollectionViewDelegate,UIC
               
           }
           //Compare array DaysHighLight with  dateString
-          dateString = "\(indexPath.row - PositionIndex + 1) \(currentMonth) \(year)"
-          print("FechaString \(dateString)")
+          dateStringDentist = "\(indexPath.row - PositionIndex + 1) \(currentMonth) \(year)"
+          print("FechaString \(dateStringDentist)")
           
           for i in 0..<DaysHighLight.count{
-              if DaysHighLight[i] == dateString{
+              if DaysHighLight[i] == dateStringDentist{
                   cell.backgroundColor = UIColor.green
                   cell.dateImage.image = UIImage(named:"")
                   
@@ -221,14 +223,17 @@ class DECalendarViewController: BaseViewController, UICollectionViewDelegate,UIC
       //for select date and pass to the other vc
       func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
           
-          dateString = "\(indexPath.row - PositionIndex + 1) \(currentMonth) \(year)"
-          print(dateString)
+          dateStringDentist = "\(indexPath.row - PositionIndex + 1) \(currentMonth) \(year)"
+          print(dateStringDentist)
           
           performSegue(withIdentifier: "DECalendarDate", sender: nil)
           //highligthDate = indexPath.row
           //collectionView.reloadData()
           //print(indexPath.row)
       }
+    @IBAction func backAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
 //Width and height for collectionCell
