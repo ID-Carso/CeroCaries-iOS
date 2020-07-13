@@ -49,6 +49,8 @@
 		779B5E7A24B5768B00D87B1B /* DESelectPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E7924B5768B00D87B1B /* DESelectPatientViewController.swift */; };
 		779B5E7C24B6476700D87B1B /* DEPatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E7B24B6476600D87B1B /* DEPatientTableViewCell.swift */; };
 		779B5E7E24B6C36300D87B1B /* DEAlertPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E7D24B6C36200D87B1B /* DEAlertPatientViewController.swift */; };
+		779B5E8024B90D0600D87B1B /* DESeeCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E7F24B90D0500D87B1B /* DESeeCalendarViewController.swift */; };
+		779B5E8224B9286900D87B1B /* DESeeCalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E8124B9286800D87B1B /* DESeeCalendarTableViewCell.swift */; };
 		77B1E4522486D5B900CE962A /* LNInstitutionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */; };
 		77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4532487557300CE962A /* GPChildrenViewController.swift */; };
 		77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */; };
@@ -121,6 +123,8 @@
 		779B5E7924B5768B00D87B1B /* DESelectPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DESelectPatientViewController.swift; sourceTree = "<group>"; };
 		779B5E7B24B6476600D87B1B /* DEPatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEPatientTableViewCell.swift; sourceTree = "<group>"; };
 		779B5E7D24B6C36200D87B1B /* DEAlertPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEAlertPatientViewController.swift; sourceTree = "<group>"; };
+		779B5E7F24B90D0500D87B1B /* DESeeCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DESeeCalendarViewController.swift; sourceTree = "<group>"; };
+		779B5E8124B9286800D87B1B /* DESeeCalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DESeeCalendarTableViewCell.swift; sourceTree = "<group>"; };
 		77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNInstitutionsViewController.swift; sourceTree = "<group>"; };
 		77B1E4532487557300CE962A /* GPChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPChildrenViewController.swift; sourceTree = "<group>"; };
 		77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPMedicalRecordViewController.swift; sourceTree = "<group>"; };
@@ -274,6 +278,8 @@
 				779B5E7924B5768B00D87B1B /* DESelectPatientViewController.swift */,
 				779B5E7B24B6476600D87B1B /* DEPatientTableViewCell.swift */,
 				779B5E7D24B6C36200D87B1B /* DEAlertPatientViewController.swift */,
+				779B5E7F24B90D0500D87B1B /* DESeeCalendarViewController.swift */,
+				779B5E8124B9286800D87B1B /* DESeeCalendarTableViewCell.swift */,
 			);
 			path = Dentist;
 			sourceTree = "<group>";
@@ -456,6 +462,7 @@
 				779B5E4A24ACC87600D87B1B /* GPDateCollectionViewCell.swift in Sources */,
 				776DB27C2475EA4000386CAC /* LNTermsViewController.swift in Sources */,
 				7777EABE246EE6D600848384 /* SceneDelegate.swift in Sources */,
+				779B5E8024B90D0600D87B1B /* DESeeCalendarViewController.swift in Sources */,
 				779B5E3E24A66BE700D87B1B /* SLInfoViewController.swift in Sources */,
 				77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */,
 				7777EAEF2473332600848384 /* LNLoginViewController.swift in Sources */,
@@ -463,6 +470,7 @@
 				779B5E4C24AD96BF00D87B1B /* GPCalendarDateViewController.swift in Sources */,
 				779B5E3924A6556400D87B1B /* NRHomeViewController.swift in Sources */,
 				777B15ED247C7019007D8877 /* GPInfoTableViewCell.swift in Sources */,
+				779B5E8224B9286900D87B1B /* DESeeCalendarTableViewCell.swift in Sources */,
 				779B5E4624AC19C000D87B1B /* GPCalendarViewController.swift in Sources */,
 				776DB27A2475AA8000386CAC /* LNCreateAccountViewCointroller.swift in Sources */,
 				772D79022490836900ED1DF4 /* DEHomeViewController.swift in Sources */,
