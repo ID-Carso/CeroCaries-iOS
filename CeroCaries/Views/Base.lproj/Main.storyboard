@@ -3012,7 +3012,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HW-JO-5I8">
-                                                                        <rect key="frame" x="327.66666666666669" y="0.0" width="36.333333333333314" height="37"/>
+                                                                        <rect key="frame" x="327.66666666666669" y="0.0" width="0.0" height="37"/>
                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" image="greaterthan.circle.fill" catalog="system"/>
                                                                         <connections>
@@ -3020,7 +3020,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33b-4R-5c1">
-                                                                        <rect key="frame" x="364" y="0.0" width="0.0" height="37"/>
+                                                                        <rect key="frame" x="327.66666666666669" y="0.0" width="36.333333333333314" height="37"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                     </view>
                                                                 </subviews>
@@ -4131,7 +4131,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="niñosfondo" translatesAutoresizingMaskIntoConstraints="NO" id="4qL-Ny-SVg">
-                                <rect key="frame" x="0.0" y="75" width="414" height="661"/>
+                                <rect key="frame" x="0.0" y="75" width="414.00000000000011" height="661"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nk8-M9-gWp">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
@@ -6420,6 +6420,9 @@
                                                         <state key="normal" title="Ver calendario">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="KHY-6Q-x5Z" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="1Pl-7c-ukD"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yE1-sO-DaY" userLabel="AuxView">
                                                         <rect key="frame" x="0.0" y="205.00000000000006" width="254" height="22.666666666666657"/>
@@ -7562,7 +7565,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbZ-xR-B4W">
-                                                                        <rect key="frame" x="327.66666666666669" y="0.0" width="36.333333333333314" height="37.666666666666664"/>
+                                                                        <rect key="frame" x="327.66666666666669" y="0.0" width="0.0" height="37.666666666666664"/>
                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" image="greaterthan.circle.fill" catalog="system"/>
                                                                         <connections>
@@ -7571,7 +7574,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="soQ-ss-89f">
-                                                                        <rect key="frame" x="364" y="0.0" width="0.0" height="37.666666666666664"/>
+                                                                        <rect key="frame" x="327.66666666666669" y="0.0" width="36.333333333333314" height="37.666666666666664"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                     </view>
                                                                 </subviews>
@@ -8426,10 +8429,10 @@
             </objects>
             <point key="canvasLocation" x="7605.7971014492759" y="3059.5108695652175"/>
         </scene>
-        <!--See Calendar View Controller-->
+        <!--Today View Controller-->
         <scene sceneID="qZ1-7x-pqy">
             <objects>
-                <viewController storyboardIdentifier="DESeeCalendarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ao6-8X-evS" customClass="DESeeCalendarViewController" customModule="CeroCaries" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DETodayViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ao6-8X-evS" customClass="DETodayViewController" customModule="CeroCaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VfB-9t-Yty">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -8472,7 +8475,7 @@
                                                         <rect key="frame" x="5" y="4.9999999999999964" width="72.666666666666671" height="54.666666666666657"/>
                                                         <state key="normal" image="chevron.left" catalog="system"/>
                                                         <connections>
-                                                            <action selector="backAction:" destination="ao6-8X-evS" eventType="touchUpInside" id="mWg-mq-byU"/>
+                                                            <action selector="backAction:" destination="ao6-8X-evS" eventType="touchUpInside" id="OMk-5f-2Jz"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -8553,7 +8556,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <color key="separatorColor" red="0.1843137255" green="0.6705882353" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="seeCalendarCell" rowHeight="77" id="deM-SD-Gho" customClass="DESeeCalendarTableViewCell" customModule="CeroCaries" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="todayCell" rowHeight="77" id="deM-SD-Gho" customClass="DETodayTableViewCell" customModule="CeroCaries" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="374" height="77"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="deM-SD-Gho" id="8Af-et-xkH">
@@ -8638,14 +8641,14 @@
                                                             </constraints>
                                                         </tableViewCellContentView>
                                                         <connections>
-                                                            <outlet property="hourLabel" destination="lsj-Ng-z50" id="48N-Nj-cB4"/>
-                                                            <outlet property="patientLabel" destination="BVQ-21-bqc" id="anx-Mq-BN5"/>
+                                                            <outlet property="hourLabel" destination="lsj-Ng-z50" id="Qpu-rV-sg6"/>
+                                                            <outlet property="patientLabel" destination="BVQ-21-bqc" id="OuL-dz-zai"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                                 <connections>
-                                                    <outlet property="dataSource" destination="ao6-8X-evS" id="cyu-0B-iOA"/>
-                                                    <outlet property="delegate" destination="ao6-8X-evS" id="PR1-6D-fvx"/>
+                                                    <outlet property="dataSource" destination="ao6-8X-evS" id="wBz-nV-hnw"/>
+                                                    <outlet property="delegate" destination="ao6-8X-evS" id="1kI-nL-P9Q"/>
                                                 </connections>
                                             </tableView>
                                         </subviews>
@@ -8837,9 +8840,9 @@
                         <viewLayoutGuide key="safeArea" id="tfe-2d-VqL"/>
                     </view>
                     <connections>
-                        <outlet property="customNavigationBar" destination="cIf-gX-yNJ" id="3Ob-ev-lwY"/>
-                        <outlet property="slideConfigButton" destination="bAp-J1-8Ts" id="HaH-wz-oGf"/>
-                        <outlet property="slideMenuButton" destination="VEt-mI-hnG" id="ZUP-RO-Ytz"/>
+                        <outlet property="customNavigationBar" destination="cIf-gX-yNJ" id="7o8-Co-8ru"/>
+                        <outlet property="slideConfigButton" destination="bAp-J1-8Ts" id="lmB-Km-7hf"/>
+                        <outlet property="slideMenuButton" destination="VEt-mI-hnG" id="QA9-2x-c24"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QMh-Kf-L5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -9428,7 +9431,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="niñosfondo" translatesAutoresizingMaskIntoConstraints="NO" id="ekV-NL-ufX">
-                                <rect key="frame" x="0.0" y="75" width="414" height="661"/>
+                                <rect key="frame" x="0.0" y="75" width="414.00000000000011" height="661"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OPY-Ms-a66">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
@@ -10276,7 +10279,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="niñosfondo" translatesAutoresizingMaskIntoConstraints="NO" id="fFR-a9-BcV">
-                                <rect key="frame" x="0.0" y="75" width="414" height="661"/>
+                                <rect key="frame" x="0.0" y="75" width="414.00000000000011" height="661"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XjW-Wo-SUF">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
@@ -10562,10 +10565,10 @@
             </objects>
             <point key="canvasLocation" x="6087" y="8837"/>
         </scene>
-        <!--View Controller-->
+        <!--See Calendar View Controller-->
         <scene sceneID="QCY-Q7-38a">
             <objects>
-                <viewController id="KHY-6Q-x5Z" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DESeeCalendarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KHY-6Q-x5Z" customClass="DESeeCalendarViewController" customModule="CeroCaries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1jO-ih-yC6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -10606,7 +10609,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATX-co-tSu">
                                                         <rect key="frame" x="5" y="5" width="72.666666666666671" height="35.333333333333336"/>
-                                                        <state key="normal" title="Button" image="chevron.left" catalog="system"/>
+                                                        <state key="normal" image="chevron.left" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="backAction:" destination="KHY-6Q-x5Z" eventType="touchUpInside" id="vOY-x8-wGB"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -10665,6 +10671,7 @@
                                                                         </state>
                                                                         <connections>
                                                                             <action selector="prevMonth:" destination="Ggt-rr-7Oq" eventType="touchUpInside" id="Nkj-uR-NJZ"/>
+                                                                            <action selector="prevMonth:" destination="KHY-6Q-x5Z" eventType="touchUpInside" id="w8t-ia-C7y"/>
                                                                         </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAYO 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mto-NZ-JBP">
@@ -10678,6 +10685,7 @@
                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" image="greaterthan.circle.fill" catalog="system"/>
                                                                         <connections>
+                                                                            <action selector="nextMonth:" destination="KHY-6Q-x5Z" eventType="touchUpInside" id="5be-Z1-xe4"/>
                                                                             <action selector="nextMonth:" destination="Ggt-rr-7Oq" eventType="touchUpInside" id="dHs-oE-7MX"/>
                                                                         </connections>
                                                                     </button>
@@ -10786,7 +10794,7 @@
                                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 </collectionViewFlowLayout>
                                                                 <cells>
-                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="GPCalendar" id="Y7i-Mg-sh7" customClass="GPDateCollectionViewCell" customModule="CeroCaries" customModuleProvider="target">
+                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="DESeeCalendarCell" id="Y7i-Mg-sh7" customClass="DESeeCalendarCollectionViewCell" customModule="CeroCaries" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="47" height="50"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VcP-13-fof">
@@ -10812,8 +10820,16 @@
                                                                                 <constraint firstItem="9MW-Xo-uj7" firstAttribute="top" secondItem="VcP-13-fof" secondAttribute="top" id="zO1-XP-Xra"/>
                                                                             </constraints>
                                                                         </collectionViewCellContentView>
+                                                                        <connections>
+                                                                            <outlet property="dateImage" destination="9MW-Xo-uj7" id="KnT-k3-5vZ"/>
+                                                                            <outlet property="dateLabel" destination="yPy-Dm-Rbt" id="spg-6q-6kF"/>
+                                                                        </connections>
                                                                     </collectionViewCell>
                                                                 </cells>
+                                                                <connections>
+                                                                    <outlet property="dataSource" destination="KHY-6Q-x5Z" id="owK-4P-LEp"/>
+                                                                    <outlet property="delegate" destination="KHY-6Q-x5Z" id="BFl-fq-Qo2"/>
+                                                                </connections>
                                                             </collectionView>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -11112,12 +11128,20 @@
                             <constraint firstItem="lFC-jE-ZeN" firstAttribute="leading" secondItem="1jO-ih-yC6" secondAttribute="leading" id="dMY-MD-bQD"/>
                             <constraint firstItem="251-ed-60X" firstAttribute="leading" secondItem="1jO-ih-yC6" secondAttribute="leading" id="eyD-ef-9zS"/>
                             <constraint firstAttribute="trailing" secondItem="251-ed-60X" secondAttribute="trailing" id="gag-5A-gpo"/>
-                            <constraint firstItem="231-nd-h6F" firstAttribute="top" secondItem="ocV-rb-xTj" secondAttribute="top" id="tWn-zd-9bT"/>
+                            <constraint firstItem="231-nd-h6F" firstAttribute="top" secondItem="1jO-ih-yC6" secondAttribute="top" id="tWn-zd-9bT"/>
                             <constraint firstAttribute="trailing" secondItem="lFC-jE-ZeN" secondAttribute="trailing" id="taA-Af-KLE"/>
                             <constraint firstItem="ocV-rb-xTj" firstAttribute="trailing" secondItem="231-nd-h6F" secondAttribute="trailing" id="w3m-zI-mOK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ocV-rb-xTj"/>
                     </view>
+                    <connections>
+                        <outlet property="calendarCollection" destination="FNf-RE-MN6" id="sYy-cM-y3o"/>
+                        <outlet property="customNavigationBar" destination="i5z-1n-183" id="hNl-Uw-DBb"/>
+                        <outlet property="monthLabel" destination="Mto-NZ-JBP" id="WiW-zB-85l"/>
+                        <outlet property="slideConfigButton" destination="oXU-wH-4Z0" id="OaJ-w3-rje"/>
+                        <outlet property="slideMenuButton" destination="hqI-xe-X38" id="RxY-mL-eNg"/>
+                        <outlet property="viewCalendar" destination="kv5-ji-ndG" id="56m-x6-Q1P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttZ-Fd-j4v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
