@@ -26,5 +26,13 @@ class DECalendarMenuViewController: BaseViewController {
         seeCalendarButton.layer.cornerRadius = 10
         
     }
+    
+    //Navigation footer buttons
+    @IBAction func expedientAction(_ sender: Any) {
+        let storyboardID = "DEExpedientMenuViewController"
+        selectStoryboarId(idStoryboard: storyboardID)
+    }
+    
+    
 
 }
