@@ -46,6 +46,15 @@ class BaseViewController: UIViewController, SlideMenuDelegate, SlideConfigDelega
         
     }
     
+    //For navigations buttons footer
+    func selectStoryboarId(idStoryboard:String){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: idStoryboard)
+        viewController.modalPresentationStyle = .fullScreen
+        viewController.modalTransitionStyle = .crossDissolve
+        present(viewController, animated: true, completion: nil)
+    }
+    
     
     //SlideMenu
     @objc func onSlideMenuButtonPressed(_ sender : UIButton){
