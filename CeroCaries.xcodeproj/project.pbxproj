@@ -59,6 +59,18 @@
 		77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4532487557300CE962A /* GPChildrenViewController.swift */; };
 		77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */; };
 		77B1E458248F089300CE962A /* LNSlideConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E457248F089300CE962A /* LNSlideConfigViewController.swift */; };
+		77B6417B2935477E006DDAAA /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6417A2935477E006DDAAA /* AppBarView.swift */; };
+		77B6417E29354B56006DDAAA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6417D29354B55006DDAAA /* Constants.swift */; };
+		77B6418029357E62006DDAAA /* AppBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6417F29357E61006DDAAA /* AppBarShape.swift */; };
+		77E714B4293666EC00AEA542 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714B3293666EB00AEA542 /* CapsuleButton.swift */; };
+		77E714B62936723800AEA542 /* CapsuleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714B52936723800AEA542 /* CapsuleTextField.swift */; };
+		77E714B829368D9F00AEA542 /* BlueActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714B729368D9E00AEA542 /* BlueActionButton.swift */; };
+		77E714BA29368FB900AEA542 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714B929368FB900AEA542 /* MainView.swift */; };
+		77E714BC293698E800AEA542 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714BB293698E800AEA542 /* LoginView.swift */; };
+		77E714BE2936992D00AEA542 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714BD2936992D00AEA542 /* SignUpView.swift */; };
+		77E714C029369A9400AEA542 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714BF29369A9400AEA542 /* HomeView.swift */; };
+		77E714C92936A7AB00AEA542 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714C82936A7AA00AEA542 /* MenuView.swift */; };
+		77E714CB2936AC7800AEA542 /* MenuSectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714CA2936AC7700AEA542 /* MenuSectionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +149,24 @@
 		77B1E4532487557300CE962A /* GPChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPChildrenViewController.swift; sourceTree = "<group>"; };
 		77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPMedicalRecordViewController.swift; sourceTree = "<group>"; };
 		77B1E457248F089300CE962A /* LNSlideConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNSlideConfigViewController.swift; sourceTree = "<group>"; };
+		77B6417A2935477E006DDAAA /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
+		77B6417D29354B55006DDAAA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		77B6417F29357E61006DDAAA /* AppBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarShape.swift; sourceTree = "<group>"; };
+		77E714B3293666EB00AEA542 /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
+		77E714B52936723800AEA542 /* CapsuleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleTextField.swift; sourceTree = "<group>"; };
+		77E714B729368D9E00AEA542 /* BlueActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueActionButton.swift; sourceTree = "<group>"; };
+		77E714B929368FB900AEA542 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		77E714BB293698E800AEA542 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		77E714BD2936992D00AEA542 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		77E714BF29369A9400AEA542 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		77E714C22936A52E00AEA542 /* Gallant bold-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gallant bold-italic.otf"; sourceTree = "<group>"; };
+		77E714C32936A52E00AEA542 /* Gallant black-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gallant black-italic.otf"; sourceTree = "<group>"; };
+		77E714C42936A52E00AEA542 /* Gallant black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gallant black.otf"; sourceTree = "<group>"; };
+		77E714C52936A52F00AEA542 /* Gallant bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gallant bold.otf"; sourceTree = "<group>"; };
+		77E714C62936A52F00AEA542 /* Gallant regular-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gallant regular-italic.otf"; sourceTree = "<group>"; };
+		77E714C72936A52F00AEA542 /* Gallant regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gallant regular.otf"; sourceTree = "<group>"; };
+		77E714C82936A7AA00AEA542 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		77E714CA2936AC7700AEA542 /* MenuSectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSectionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +228,11 @@
 			isa = PBXGroup;
 			children = (
 				7777EAC1246EE6D700848384 /* Main.storyboard */,
+				77B6417A2935477E006DDAAA /* AppBarView.swift */,
+				77E714B3293666EB00AEA542 /* CapsuleButton.swift */,
+				77E714B52936723800AEA542 /* CapsuleTextField.swift */,
+				77E714B729368D9E00AEA542 /* BlueActionButton.swift */,
+				77E714CA2936AC7700AEA542 /* MenuSectionButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +277,11 @@
 		7777EABA246EE6D600848384 /* CeroCaries */ = {
 			isa = PBXGroup;
 			children = (
+				77E714C12936A4AE00AEA542 /* Font */,
+				77B6417C29354B15006DDAAA /* Utility */,
+				77B6417929354618006DDAAA /* App */,
+				77B64178293545F9006DDAAA /* ViewModel */,
+				77B64177293545ED006DDAAA /* Model */,
 				776DB27F24780BAD00386CAC /* Views */,
 				776DB27D247807DE00386CAC /* Controllers */,
 				7777EABB246EE6D600848384 /* AppDelegate.swift */,
@@ -314,6 +354,54 @@
 				779B5E3F24A685FC00D87B1B /* SLInfoTableViewCell.swift */,
 			);
 			path = School;
+			sourceTree = "<group>";
+		};
+		77B64177293545ED006DDAAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77B64178293545F9006DDAAA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		77B6417929354618006DDAAA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				77E714B929368FB900AEA542 /* MainView.swift */,
+				77E714BB293698E800AEA542 /* LoginView.swift */,
+				77E714BD2936992D00AEA542 /* SignUpView.swift */,
+				77E714BF29369A9400AEA542 /* HomeView.swift */,
+				77E714C82936A7AA00AEA542 /* MenuView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		77B6417C29354B15006DDAAA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				77B6417D29354B55006DDAAA /* Constants.swift */,
+				77B6417F29357E61006DDAAA /* AppBarShape.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		77E714C12936A4AE00AEA542 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				77E714C32936A52E00AEA542 /* Gallant black-italic.otf */,
+				77E714C42936A52E00AEA542 /* Gallant black.otf */,
+				77E714C22936A52E00AEA542 /* Gallant bold-italic.otf */,
+				77E714C52936A52F00AEA542 /* Gallant bold.otf */,
+				77E714C62936A52F00AEA542 /* Gallant regular-italic.otf */,
+				77E714C72936A52F00AEA542 /* Gallant regular.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +543,7 @@
 				779B5E7024B3C61A00D87B1B /* DECalendarViewController.swift in Sources */,
 				777B15EF247C9692007D8877 /* BaseViewController.swift in Sources */,
 				779B5E4824ACC81D00D87B1B /* GPCalendarComponent.swift in Sources */,
+				77E714BC293698E800AEA542 /* LoginView.swift in Sources */,
 				7777EAF12474AC5400848384 /* LNRecoverPasswordViewController.swift in Sources */,
 				772D78FE24901C0100ED1DF4 /* LNCategoryViewController.swift in Sources */,
 				779B5E7C24B6476700D87B1B /* DEPatientTableViewCell.swift in Sources */,
@@ -462,12 +551,18 @@
 				779B5E3C24A666CC00D87B1B /* SLHomeViewController.swift in Sources */,
 				7777EAF32474C91C00848384 /* LNRecoverPassAlertViewController.swift in Sources */,
 				779B5E7224B3FF1E00D87B1B /* DEDateCollectionViewCell.swift in Sources */,
+				77E714B62936723800AEA542 /* CapsuleTextField.swift in Sources */,
+				77E714C92936A7AB00AEA542 /* MenuView.swift in Sources */,
 				772D790024904C4F00ED1DF4 /* LNWelcomeViewController.swift in Sources */,
+				77E714C029369A9400AEA542 /* HomeView.swift in Sources */,
+				77E714B829368D9F00AEA542 /* BlueActionButton.swift in Sources */,
 				772D79042497FF5C00ED1DF4 /* DECalendarMenuViewController.swift in Sources */,
+				77E714BA29368FB900AEA542 /* MainView.swift in Sources */,
 				77B1E4522486D5B900CE962A /* LNInstitutionsViewController.swift in Sources */,
 				776DB288247862FF00386CAC /* GPInfoViewController.swift in Sources */,
 				7777EAC0246EE6D600848384 /* LNHomeViewController.swift in Sources */,
 				7777EABC246EE6D600848384 /* AppDelegate.swift in Sources */,
+				77E714CB2936AC7800AEA542 /* MenuSectionButton.swift in Sources */,
 				779B5E4E24AE733500D87B1B /* GPUploadProfileViewController.swift in Sources */,
 				77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */,
 				777B162C2485BEAF007D8877 /* LNSlideMenuViewController.swift in Sources */,
@@ -484,6 +579,7 @@
 				779B5E4C24AD96BF00D87B1B /* GPCalendarDateViewController.swift in Sources */,
 				779B5E8824BE4FFB00D87B1B /* DESeeCalendarCollectionViewCell.swift in Sources */,
 				779B5E3924A6556400D87B1B /* NRHomeViewController.swift in Sources */,
+				77E714B4293666EC00AEA542 /* CapsuleButton.swift in Sources */,
 				777B15ED247C7019007D8877 /* GPInfoTableViewCell.swift in Sources */,
 				779B5E8624BDB6E400D87B1B /* DETodayTableViewCell.swift in Sources */,
 				779B5E4624AC19C000D87B1B /* GPCalendarViewController.swift in Sources */,
@@ -491,9 +587,13 @@
 				772D79022490836900ED1DF4 /* DEHomeViewController.swift in Sources */,
 				77B1E458248F089300CE962A /* LNSlideConfigViewController.swift in Sources */,
 				779B5E7E24B6C36300D87B1B /* DEAlertPatientViewController.swift in Sources */,
+				77B6417B2935477E006DDAAA /* AppBarView.swift in Sources */,
 				7777EAC6246EE6D700848384 /* CeroCaries.xcdatamodeld in Sources */,
+				77B6417E29354B56006DDAAA /* Constants.swift in Sources */,
+				77E714BE2936992D00AEA542 /* SignUpView.swift in Sources */,
 				779B5E4224A6A50500D87B1B /* NRInfoViewController.swift in Sources */,
 				779B5E8424BDB6B900D87B1B /* DETodayViewController.swift in Sources */,
+				77B6418029357E62006DDAAA /* AppBarShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,7 +769,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NC33XRP56U;
 				INFOPLIST_FILE = CeroCaries/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -688,7 +788,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NC33XRP56U;
 				INFOPLIST_FILE = CeroCaries/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

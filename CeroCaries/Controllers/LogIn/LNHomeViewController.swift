@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class LNHomeViewController: BaseViewController {
     
@@ -16,11 +17,10 @@ class LNHomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //Disable DarkMode for placeholder
-        disableDarkMode()
+//        disableDarkMode()
         //NavigationBarConfig
-        imageNavBar()
+//        imageNavBar()
         viewStyle()
         
         
@@ -31,6 +31,10 @@ class LNHomeViewController: BaseViewController {
         createAccountBtn.layer.cornerRadius = 10
         withOutRegisterBtn.layer.cornerRadius = 10
 
+        let root = MainView()
+        
+        let host = UIHostingController(rootView: root)
+        self.navigationController?.pushViewController(host, animated: true)
     }
     
 
