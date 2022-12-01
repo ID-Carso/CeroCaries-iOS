@@ -11,9 +11,16 @@ import SwiftUI
 struct CapsuleTextField: View {
     
     @Binding var text: String
+    let placeholder: String
+    let keyboardType: UIKeyboardType
+    let contentType: UITextContentType
     
     var body: some View {
-        TextField("Name", text: $text)
+        TextField(placeholder, text: $text)
+            .keyboardType(keyboardType)
+            .textContentType(contentType)
+            .disableAutocorrection(false)
+            .multilineTextAlignment(.leading)
             .frame(width: widthScreen * 0.8)
             .padding()
             .background(
@@ -24,7 +31,7 @@ struct CapsuleTextField: View {
 
 struct CapsuleTextField_Previews: PreviewProvider {
     static var previews: some View {
-        CapsuleTextField(text: .constant(""))
+        CapsuleTextField(text: .constant(""), placeholder: "name", keyboardType: .default, contentType: .givenName)
             .previewLayout(.sizeThatFits)
             .padding()
     }

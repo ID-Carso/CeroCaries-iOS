@@ -62,6 +62,16 @@
 		77B6417B2935477E006DDAAA /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6417A2935477E006DDAAA /* AppBarView.swift */; };
 		77B6417E29354B56006DDAAA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6417D29354B55006DDAAA /* Constants.swift */; };
 		77B6418029357E62006DDAAA /* AppBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6417F29357E61006DDAAA /* AppBarShape.swift */; };
+		77C1D5162937BC3300324690 /* AssistiveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D5152937BC3300324690 /* AssistiveText.swift */; };
+		77C1D5182937D3BC00324690 /* TermsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D5172937D3BC00324690 /* TermsControl.swift */; };
+		77C1D51A2937D86600324690 /* SignupFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D5192937D86600324690 /* SignupFieldView.swift */; };
+		77C1D51C293821A000324690 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D51B2938219F00324690 /* SettingsView.swift */; };
+		77C1D51E293822E900324690 /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D51D293822E900324690 /* HeaderSectionView.swift */; };
+		77C1D520293825A400324690 /* InstitutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D51F293825A400324690 /* InstitutesView.swift */; };
+		77C1D522293906BD00324690 /* FooterNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D521293906BD00324690 /* FooterNavbar.swift */; };
+		77C1D524293907C700324690 /* FooterNavItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D523293907C700324690 /* FooterNavItemView.swift */; };
+		77C1D52729392A1500324690 /* patrocinadores.json in Resources */ = {isa = PBXBuildFile; fileRef = 77C1D52629392A1400324690 /* patrocinadores.json */; };
+		77C1D52A29392A3E00324690 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D52929392A3E00324690 /* Bundle.swift */; };
 		77E714B4293666EC00AEA542 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714B3293666EB00AEA542 /* CapsuleButton.swift */; };
 		77E714B62936723800AEA542 /* CapsuleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714B52936723800AEA542 /* CapsuleTextField.swift */; };
 		77E714B829368D9F00AEA542 /* BlueActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714B729368D9E00AEA542 /* BlueActionButton.swift */; };
@@ -152,6 +162,16 @@
 		77B6417A2935477E006DDAAA /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
 		77B6417D29354B55006DDAAA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		77B6417F29357E61006DDAAA /* AppBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarShape.swift; sourceTree = "<group>"; };
+		77C1D5152937BC3300324690 /* AssistiveText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistiveText.swift; sourceTree = "<group>"; };
+		77C1D5172937D3BC00324690 /* TermsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsControl.swift; sourceTree = "<group>"; };
+		77C1D5192937D86600324690 /* SignupFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFieldView.swift; sourceTree = "<group>"; };
+		77C1D51B2938219F00324690 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		77C1D51D293822E900324690 /* HeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
+		77C1D51F293825A400324690 /* InstitutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutesView.swift; sourceTree = "<group>"; };
+		77C1D521293906BD00324690 /* FooterNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterNavbar.swift; sourceTree = "<group>"; };
+		77C1D523293907C700324690 /* FooterNavItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterNavItemView.swift; sourceTree = "<group>"; };
+		77C1D52629392A1400324690 /* patrocinadores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = patrocinadores.json; sourceTree = "<group>"; };
+		77C1D52929392A3E00324690 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		77E714B3293666EB00AEA542 /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
 		77E714B52936723800AEA542 /* CapsuleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleTextField.swift; sourceTree = "<group>"; };
 		77E714B729368D9E00AEA542 /* BlueActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueActionButton.swift; sourceTree = "<group>"; };
@@ -233,6 +253,12 @@
 				77E714B52936723800AEA542 /* CapsuleTextField.swift */,
 				77E714B729368D9E00AEA542 /* BlueActionButton.swift */,
 				77E714CA2936AC7700AEA542 /* MenuSectionButton.swift */,
+				77C1D5152937BC3300324690 /* AssistiveText.swift */,
+				77C1D5172937D3BC00324690 /* TermsControl.swift */,
+				77C1D5192937D86600324690 /* SignupFieldView.swift */,
+				77C1D51D293822E900324690 /* HeaderSectionView.swift */,
+				77C1D521293906BD00324690 /* FooterNavbar.swift */,
+				77C1D523293907C700324690 /* FooterNavItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +303,8 @@
 		7777EABA246EE6D600848384 /* CeroCaries */ = {
 			isa = PBXGroup;
 			children = (
+				77C1D52829392A3000324690 /* Extensions */,
+				77C1D5252939269F00324690 /* Data */,
 				77E714C12936A4AE00AEA542 /* Font */,
 				77B6417C29354B15006DDAAA /* Utility */,
 				77B6417929354618006DDAAA /* App */,
@@ -378,6 +406,8 @@
 				77E714BD2936992D00AEA542 /* SignUpView.swift */,
 				77E714BF29369A9400AEA542 /* HomeView.swift */,
 				77E714C82936A7AA00AEA542 /* MenuView.swift */,
+				77C1D51B2938219F00324690 /* SettingsView.swift */,
+				77C1D51F293825A400324690 /* InstitutesView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -389,6 +419,22 @@
 				77B6417F29357E61006DDAAA /* AppBarShape.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		77C1D5252939269F00324690 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				77C1D52629392A1400324690 /* patrocinadores.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		77C1D52829392A3000324690 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77C1D52929392A3E00324690 /* Bundle.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		77E714C12936A4AE00AEA542 /* Font */ = {
@@ -509,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7777EACB246EE6DA00848384 /* LaunchScreen.storyboard in Resources */,
+				77C1D52729392A1500324690 /* patrocinadores.json in Resources */,
 				7777EAC8246EE6DA00848384 /* Assets.xcassets in Resources */,
 				7777EAC3246EE6D700848384 /* Main.storyboard in Resources */,
 			);
@@ -536,6 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				779B5E7624B504E900D87B1B /* DESelectTimeTableViewCell.swift in Sources */,
+				77C1D5162937BC3300324690 /* AssistiveText.swift in Sources */,
 				779B5E7424B4FBB400D87B1B /* DESelectTimeViewController.swift in Sources */,
 				779B5E8C24C12DA500D87B1B /* DESeeExpedientViewController.swift in Sources */,
 				779B5E4024A685FC00D87B1B /* SLInfoTableViewCell.swift in Sources */,
@@ -543,9 +591,11 @@
 				779B5E7024B3C61A00D87B1B /* DECalendarViewController.swift in Sources */,
 				777B15EF247C9692007D8877 /* BaseViewController.swift in Sources */,
 				779B5E4824ACC81D00D87B1B /* GPCalendarComponent.swift in Sources */,
+				77C1D520293825A400324690 /* InstitutesView.swift in Sources */,
 				77E714BC293698E800AEA542 /* LoginView.swift in Sources */,
 				7777EAF12474AC5400848384 /* LNRecoverPasswordViewController.swift in Sources */,
 				772D78FE24901C0100ED1DF4 /* LNCategoryViewController.swift in Sources */,
+				77C1D52A29392A3E00324690 /* Bundle.swift in Sources */,
 				779B5E7C24B6476700D87B1B /* DEPatientTableViewCell.swift in Sources */,
 				776DB285247814F400386CAC /* GPHomeViewController.swift in Sources */,
 				779B5E3C24A666CC00D87B1B /* SLHomeViewController.swift in Sources */,
@@ -555,6 +605,7 @@
 				77E714C92936A7AB00AEA542 /* MenuView.swift in Sources */,
 				772D790024904C4F00ED1DF4 /* LNWelcomeViewController.swift in Sources */,
 				77E714C029369A9400AEA542 /* HomeView.swift in Sources */,
+				77C1D51C293821A000324690 /* SettingsView.swift in Sources */,
 				77E714B829368D9F00AEA542 /* BlueActionButton.swift in Sources */,
 				772D79042497FF5C00ED1DF4 /* DECalendarMenuViewController.swift in Sources */,
 				77E714BA29368FB900AEA542 /* MainView.swift in Sources */,
@@ -570,12 +621,16 @@
 				779B5E7A24B5768B00D87B1B /* DESelectPatientViewController.swift in Sources */,
 				779B5E4A24ACC87600D87B1B /* GPDateCollectionViewCell.swift in Sources */,
 				776DB27C2475EA4000386CAC /* LNTermsViewController.swift in Sources */,
+				77C1D524293907C700324690 /* FooterNavItemView.swift in Sources */,
+				77C1D522293906BD00324690 /* FooterNavbar.swift in Sources */,
 				7777EABE246EE6D600848384 /* SceneDelegate.swift in Sources */,
 				779B5E8024B90D0600D87B1B /* DESeeCalendarViewController.swift in Sources */,
 				779B5E3E24A66BE700D87B1B /* SLInfoViewController.swift in Sources */,
 				77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */,
 				7777EAEF2473332600848384 /* LNLoginViewController.swift in Sources */,
 				779B5E7824B5762500D87B1B /* DEConfirmViewController.swift in Sources */,
+				77C1D51E293822E900324690 /* HeaderSectionView.swift in Sources */,
+				77C1D5182937D3BC00324690 /* TermsControl.swift in Sources */,
 				779B5E4C24AD96BF00D87B1B /* GPCalendarDateViewController.swift in Sources */,
 				779B5E8824BE4FFB00D87B1B /* DESeeCalendarCollectionViewCell.swift in Sources */,
 				779B5E3924A6556400D87B1B /* NRHomeViewController.swift in Sources */,
@@ -592,6 +647,7 @@
 				77B6417E29354B56006DDAAA /* Constants.swift in Sources */,
 				77E714BE2936992D00AEA542 /* SignUpView.swift in Sources */,
 				779B5E4224A6A50500D87B1B /* NRInfoViewController.swift in Sources */,
+				77C1D51A2937D86600324690 /* SignupFieldView.swift in Sources */,
 				779B5E8424BDB6B900D87B1B /* DETodayViewController.swift in Sources */,
 				77B6418029357E62006DDAAA /* AppBarShape.swift in Sources */,
 			);

@@ -29,7 +29,10 @@ struct AppBarView: View {
                 Button(action: {
                     showMenu.toggle()
                 }) {
-                    Image(systemName: "line.3.horizontal")
+                    Image("menuIcon")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30, height: 30)
                         .foregroundColor(Color("BlueColor"))
                 }
                 .padding(.leading, 20)
@@ -40,13 +43,13 @@ struct AppBarView: View {
 
                 Spacer()
 
-                Button(action: {
+                /*Button(action: {
                     showSettings.toggle()
                 }) {
                     Image(systemName: "gearshape.fill")
                         .foregroundColor(Color("BlueColor"))
                         .padding(.trailing, 20)
-                }
+                }*/
             }
             .frame(width: widthScreen, height: heightScreen * 0.1)
         }
@@ -56,6 +59,7 @@ struct AppBarView: View {
 struct AppBarView_Previews: PreviewProvider {
     static var previews: some View {
         AppBarView(showMenu: .constant(false), showSettings: .constant(false))
+            .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
             .padding()
     }

@@ -45,6 +45,7 @@ struct MainView: View {
                 
                 Spacer()
             }
+            .frame(width: widthScreen)
             .onTapGesture {
                 showMenu = false
                 showSettings = false

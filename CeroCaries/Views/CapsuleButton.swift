@@ -20,7 +20,7 @@ struct CapsuleButton: View {
                 .foregroundColor(Color("BlueColor"))
                 .padding()
         }
-        .frame(width: widthScreen * 0.5, height: heightScreen * 0.08)
+        .frame(width: widthScreen * 0.5, height: heightScreen * 0.05)
         .background(Color(backgroundColor))
         .cornerRadius(30)
         .background(

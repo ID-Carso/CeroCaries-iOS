@@ -13,26 +13,46 @@ struct MenuView: View {
     @Binding var showMenu: Bool
     
     var body: some View {
-        ZStack(alignment: .top) {
-            VStack(spacing: 50) {
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: widthScreen * 0.7, height: heightScreen * 0.2)
-                    .padding(.top, 40)
+        ZStack {
+            
+            GeometryReader { _ in
+                VStack(spacing: 25) {
+                    Image("logoslidemenu")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: widthScreen * 0.6, height: heightScreen * 0.2)
+                        .padding(.top, 40)
+                    
+                    MenuSectionButton(sectionText: "compartir en rrss")
                 
-                MenuSectionButton(sectionText: "compartir en rrss")
+                    MenuSectionButton(sectionText: "instituciones que nos avalan")
                 
-                MenuSectionButton(sectionText: "instituciones que nos avalan")
+                    Spacer()
                 
-                Spacer()
-                
-                Image("logoNav")
-                    .padding(.bottom, 30)
+                    Image("footermenulogo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: widthScreen * 0.3, height: widthScreen * 0.3)
+                        .padding(.bottom, 30)
+                }
+                .frame(width: widthScreen * 0.8)
+                .background(Color.white)
+                .opacity(showMenu ? 1 : 0)
+                .offset(x: showMenu ? 0 : -widthScreen)
+                .shadow(color: .gray, radius: 5, x: 0, y: 2)
+                .animation(.easeIn(duration: 0.6))
+                .gesture(
+                    DragGesture()
+                        .onEnded { translation in
+                            
+                            if translation.translation.width < -20 {
+                                withAnimation {
+                                    showMenu = false
+                                }
+                            }
+                        }
+                )
             }
-            .frame(width: widthScreen * 0.8)
-            .background(Color("LightBlueButtonColor"))
-            .offset(x: showMenu ? (widthScreen * -0.1) : (widthScreen * -1), y: 0)
         }
     }
 }
