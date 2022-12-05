@@ -15,7 +15,6 @@ struct MainView: View {
     @State var openSignUp: Bool = false
     @State var openGuest: Bool = false
     @State var showMenu: Bool = false
-    @State var showSettings: Bool = false
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -26,7 +25,7 @@ struct MainView: View {
             NavigationLink(destination: HomeView(), isActive: $openGuest) { EmptyView() }
             
             VStack(spacing: 0) {
-                AppBarView(showMenu: $showMenu, showSettings: $showSettings)
+                AppBarView(showMenu: $showMenu)
                 
                 Image("logoNav")
                     .resizable()
@@ -48,7 +47,6 @@ struct MainView: View {
             .frame(width: widthScreen)
             .onTapGesture {
                 showMenu = false
-                showSettings = false
             }
             
             MenuView(showMenu: $showMenu)
@@ -58,7 +56,6 @@ struct MainView: View {
         .navigationBarHidden(true)
         .onDisappear {
             showMenu = false
-            showSettings = false
         }
     }
 }

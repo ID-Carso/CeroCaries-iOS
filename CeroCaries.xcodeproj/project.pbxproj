@@ -30,6 +30,10 @@
 		777B15ED247C7019007D8877 /* GPInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B15EC247C7019007D8877 /* GPInfoTableViewCell.swift */; };
 		777B15EF247C9692007D8877 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B15EE247C9692007D8877 /* BaseViewController.swift */; };
 		777B162C2485BEAF007D8877 /* LNSlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B162B2485BEAF007D8877 /* LNSlideMenuViewController.swift */; };
+		778484A3293A551100057BE0 /* HomeFactorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778484A2293A551100057BE0 /* HomeFactorsView.swift */; };
+		778484A5293A557200057BE0 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778484A4293A557200057BE0 /* TipsView.swift */; };
+		778484A7293A55AC00057BE0 /* CeroCariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778484A6293A55AC00057BE0 /* CeroCariesView.swift */; };
+		778484A9293A567500057BE0 /* LolaPoloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778484A8293A567500057BE0 /* LolaPoloView.swift */; };
 		779B5E3924A6556400D87B1B /* NRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E3824A6556300D87B1B /* NRHomeViewController.swift */; };
 		779B5E3C24A666CC00D87B1B /* SLHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E3B24A666CB00D87B1B /* SLHomeViewController.swift */; };
 		779B5E3E24A66BE700D87B1B /* SLInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E3D24A66BE700D87B1B /* SLInfoViewController.swift */; };
@@ -55,6 +59,15 @@
 		779B5E8824BE4FFB00D87B1B /* DESeeCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E8724BE4FFB00D87B1B /* DESeeCalendarCollectionViewCell.swift */; };
 		779B5E8A24C0F2AF00D87B1B /* DEExpedientMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E8924C0F2AE00D87B1B /* DEExpedientMenuViewController.swift */; };
 		779B5E8C24C12DA500D87B1B /* DESeeExpedientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B5E8B24C12DA500D87B1B /* DESeeExpedientViewController.swift */; };
+		77B12D3E293A684A00A8952C /* mitos.json in Resources */ = {isa = PBXBuildFile; fileRef = 77B12D3D293A684A00A8952C /* mitos.json */; };
+		77B12D40293A686500A8952C /* MitosRealidades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B12D3F293A686500A8952C /* MitosRealidades.swift */; };
+		77B12D42293A805800A8952C /* ShowMoreOdontologiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B12D41293A805800A8952C /* ShowMoreOdontologiaView.swift */; };
+		77B12D44293A81CD00A8952C /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B12D43293A81CD00A8952C /* SeparatorView.swift */; };
+		77B12D46293A8D7100A8952C /* odontologia.json in Resources */ = {isa = PBXBuildFile; fileRef = 77B12D45293A8D7100A8952C /* odontologia.json */; };
+		77B12D48293A8DC300A8952C /* Odontologia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B12D47293A8DC300A8952C /* Odontologia.swift */; };
+		77B12D4A293AACD400A8952C /* CeroCariesInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B12D49293AACD400A8952C /* CeroCariesInfoView.swift */; };
+		77B12D4C293AB0BF00A8952C /* cerocaries.json in Resources */ = {isa = PBXBuildFile; fileRef = 77B12D4B293AB0BF00A8952C /* cerocaries.json */; };
+		77B12D4E293AB0E400A8952C /* CeroCaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B12D4D293AB0E400A8952C /* CeroCaries.swift */; };
 		77B1E4522486D5B900CE962A /* LNInstitutionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */; };
 		77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E4532487557300CE962A /* GPChildrenViewController.swift */; };
 		77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */; };
@@ -72,6 +85,13 @@
 		77C1D524293907C700324690 /* FooterNavItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D523293907C700324690 /* FooterNavItemView.swift */; };
 		77C1D52729392A1500324690 /* patrocinadores.json in Resources */ = {isa = PBXBuildFile; fileRef = 77C1D52629392A1400324690 /* patrocinadores.json */; };
 		77C1D52A29392A3E00324690 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D52929392A3E00324690 /* Bundle.swift */; };
+		77C1D52C29392C2100324690 /* Patrocinador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D52B29392C2100324690 /* Patrocinador.swift */; };
+		77C1D52E29393A7B00324690 /* SectionHomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D52D29393A7A00324690 /* SectionHomeButtonView.swift */; };
+		77C1D530293942AA00324690 /* FooterLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D52F293942A900324690 /* FooterLineView.swift */; };
+		77C1D5322939523800324690 /* MitosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D5312939523700324690 /* MitosView.swift */; };
+		77C1D534293959DD00324690 /* TopicTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D533293959DC00324690 /* TopicTextView.swift */; };
+		77C1D53F2939730C00324690 /* OdontologiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D53E2939730C00324690 /* OdontologiaView.swift */; };
+		77C1D5412939759F00324690 /* TextPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1D5402939759F00324690 /* TextPointView.swift */; };
 		77E714B4293666EC00AEA542 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714B3293666EB00AEA542 /* CapsuleButton.swift */; };
 		77E714B62936723800AEA542 /* CapsuleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714B52936723800AEA542 /* CapsuleTextField.swift */; };
 		77E714B829368D9F00AEA542 /* BlueActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E714B729368D9E00AEA542 /* BlueActionButton.swift */; };
@@ -130,6 +150,10 @@
 		777B15EC247C7019007D8877 /* GPInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPInfoTableViewCell.swift; sourceTree = "<group>"; };
 		777B15EE247C9692007D8877 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		777B162B2485BEAF007D8877 /* LNSlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNSlideMenuViewController.swift; sourceTree = "<group>"; };
+		778484A2293A551100057BE0 /* HomeFactorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactorsView.swift; sourceTree = "<group>"; };
+		778484A4293A557200057BE0 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		778484A6293A55AC00057BE0 /* CeroCariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeroCariesView.swift; sourceTree = "<group>"; };
+		778484A8293A567500057BE0 /* LolaPoloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolaPoloView.swift; sourceTree = "<group>"; };
 		779B5E3824A6556300D87B1B /* NRHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRHomeViewController.swift; sourceTree = "<group>"; };
 		779B5E3B24A666CB00D87B1B /* SLHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLHomeViewController.swift; sourceTree = "<group>"; };
 		779B5E3D24A66BE700D87B1B /* SLInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLInfoViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +179,15 @@
 		779B5E8724BE4FFB00D87B1B /* DESeeCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DESeeCalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		779B5E8924C0F2AE00D87B1B /* DEExpedientMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEExpedientMenuViewController.swift; sourceTree = "<group>"; };
 		779B5E8B24C12DA500D87B1B /* DESeeExpedientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DESeeExpedientViewController.swift; sourceTree = "<group>"; };
+		77B12D3D293A684A00A8952C /* mitos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mitos.json; sourceTree = "<group>"; };
+		77B12D3F293A686500A8952C /* MitosRealidades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitosRealidades.swift; sourceTree = "<group>"; };
+		77B12D41293A805800A8952C /* ShowMoreOdontologiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMoreOdontologiaView.swift; sourceTree = "<group>"; };
+		77B12D43293A81CD00A8952C /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		77B12D45293A8D7100A8952C /* odontologia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = odontologia.json; sourceTree = "<group>"; };
+		77B12D47293A8DC300A8952C /* Odontologia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Odontologia.swift; sourceTree = "<group>"; };
+		77B12D49293AACD400A8952C /* CeroCariesInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeroCariesInfoView.swift; sourceTree = "<group>"; };
+		77B12D4B293AB0BF00A8952C /* cerocaries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cerocaries.json; sourceTree = "<group>"; };
+		77B12D4D293AB0E400A8952C /* CeroCaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeroCaries.swift; sourceTree = "<group>"; };
 		77B1E4512486D5B900CE962A /* LNInstitutionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNInstitutionsViewController.swift; sourceTree = "<group>"; };
 		77B1E4532487557300CE962A /* GPChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPChildrenViewController.swift; sourceTree = "<group>"; };
 		77B1E455248EF66E00CE962A /* GPMedicalRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPMedicalRecordViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +205,13 @@
 		77C1D523293907C700324690 /* FooterNavItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterNavItemView.swift; sourceTree = "<group>"; };
 		77C1D52629392A1400324690 /* patrocinadores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = patrocinadores.json; sourceTree = "<group>"; };
 		77C1D52929392A3E00324690 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		77C1D52B29392C2100324690 /* Patrocinador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patrocinador.swift; sourceTree = "<group>"; };
+		77C1D52D29393A7A00324690 /* SectionHomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHomeButtonView.swift; sourceTree = "<group>"; };
+		77C1D52F293942A900324690 /* FooterLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterLineView.swift; sourceTree = "<group>"; };
+		77C1D5312939523700324690 /* MitosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitosView.swift; sourceTree = "<group>"; };
+		77C1D533293959DC00324690 /* TopicTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTextView.swift; sourceTree = "<group>"; };
+		77C1D53E2939730C00324690 /* OdontologiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdontologiaView.swift; sourceTree = "<group>"; };
+		77C1D5402939759F00324690 /* TextPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPointView.swift; sourceTree = "<group>"; };
 		77E714B3293666EB00AEA542 /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
 		77E714B52936723800AEA542 /* CapsuleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleTextField.swift; sourceTree = "<group>"; };
 		77E714B729368D9E00AEA542 /* BlueActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueActionButton.swift; sourceTree = "<group>"; };
@@ -259,6 +299,11 @@
 				77C1D51D293822E900324690 /* HeaderSectionView.swift */,
 				77C1D521293906BD00324690 /* FooterNavbar.swift */,
 				77C1D523293907C700324690 /* FooterNavItemView.swift */,
+				77C1D52D29393A7A00324690 /* SectionHomeButtonView.swift */,
+				77C1D52F293942A900324690 /* FooterLineView.swift */,
+				77C1D533293959DC00324690 /* TopicTextView.swift */,
+				77C1D5402939759F00324690 /* TextPointView.swift */,
+				77B12D43293A81CD00A8952C /* SeparatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -387,6 +432,10 @@
 		77B64177293545ED006DDAAA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				77C1D52B29392C2100324690 /* Patrocinador.swift */,
+				77B12D3F293A686500A8952C /* MitosRealidades.swift */,
+				77B12D47293A8DC300A8952C /* Odontologia.swift */,
+				77B12D4D293AB0E400A8952C /* CeroCaries.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -401,13 +450,18 @@
 		77B6417929354618006DDAAA /* App */ = {
 			isa = PBXGroup;
 			children = (
+				77C1D53D293972B800324690 /* Home */,
+				77C1D53C2939729C00324690 /* Registro */,
+				77C1D53B2939726D00324690 /* Menu */,
+				77C1D53A2939725600324690 /* Odontología */,
+				77C1D5392939723A00324690 /* CeroCaries */,
+				77C1D5382939722A00324690 /* Realidades */,
+				77C1D5372939721D00324690 /* Tips */,
+				77C1D5362939720C00324690 /* Cuentos */,
+				77C1D535293971E500324690 /* Factores */,
 				77E714B929368FB900AEA542 /* MainView.swift */,
 				77E714BB293698E800AEA542 /* LoginView.swift */,
-				77E714BD2936992D00AEA542 /* SignUpView.swift */,
 				77E714BF29369A9400AEA542 /* HomeView.swift */,
-				77E714C82936A7AA00AEA542 /* MenuView.swift */,
-				77C1D51B2938219F00324690 /* SettingsView.swift */,
-				77C1D51F293825A400324690 /* InstitutesView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -425,6 +479,9 @@
 			isa = PBXGroup;
 			children = (
 				77C1D52629392A1400324690 /* patrocinadores.json */,
+				77B12D3D293A684A00A8952C /* mitos.json */,
+				77B12D45293A8D7100A8952C /* odontologia.json */,
+				77B12D4B293AB0BF00A8952C /* cerocaries.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -435,6 +492,82 @@
 				77C1D52929392A3E00324690 /* Bundle.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77C1D535293971E500324690 /* Factores */ = {
+			isa = PBXGroup;
+			children = (
+				778484A2293A551100057BE0 /* HomeFactorsView.swift */,
+			);
+			path = Factores;
+			sourceTree = "<group>";
+		};
+		77C1D5362939720C00324690 /* Cuentos */ = {
+			isa = PBXGroup;
+			children = (
+				778484A8293A567500057BE0 /* LolaPoloView.swift */,
+			);
+			path = Cuentos;
+			sourceTree = "<group>";
+		};
+		77C1D5372939721D00324690 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				778484A4293A557200057BE0 /* TipsView.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		77C1D5382939722A00324690 /* Realidades */ = {
+			isa = PBXGroup;
+			children = (
+				77C1D5312939523700324690 /* MitosView.swift */,
+			);
+			path = Realidades;
+			sourceTree = "<group>";
+		};
+		77C1D5392939723A00324690 /* CeroCaries */ = {
+			isa = PBXGroup;
+			children = (
+				778484A6293A55AC00057BE0 /* CeroCariesView.swift */,
+				77B12D49293AACD400A8952C /* CeroCariesInfoView.swift */,
+			);
+			path = CeroCaries;
+			sourceTree = "<group>";
+		};
+		77C1D53A2939725600324690 /* Odontología */ = {
+			isa = PBXGroup;
+			children = (
+				77C1D53E2939730C00324690 /* OdontologiaView.swift */,
+				77B12D41293A805800A8952C /* ShowMoreOdontologiaView.swift */,
+			);
+			name = "Odontología";
+			path = "Odontología";
+			sourceTree = "<group>";
+		};
+		77C1D53B2939726D00324690 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				77E714C82936A7AA00AEA542 /* MenuView.swift */,
+				77C1D51F293825A400324690 /* InstitutesView.swift */,
+				77C1D51B2938219F00324690 /* SettingsView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		77C1D53C2939729C00324690 /* Registro */ = {
+			isa = PBXGroup;
+			children = (
+				77E714BD2936992D00AEA542 /* SignUpView.swift */,
+			);
+			path = Registro;
+			sourceTree = "<group>";
+		};
+		77C1D53D293972B800324690 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		77E714C12936A4AE00AEA542 /* Font */ = {
@@ -554,10 +687,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B12D3E293A684A00A8952C /* mitos.json in Resources */,
 				7777EACB246EE6DA00848384 /* LaunchScreen.storyboard in Resources */,
 				77C1D52729392A1500324690 /* patrocinadores.json in Resources */,
 				7777EAC8246EE6DA00848384 /* Assets.xcassets in Resources */,
 				7777EAC3246EE6D700848384 /* Main.storyboard in Resources */,
+				77B12D46293A8D7100A8952C /* odontologia.json in Resources */,
+				77B12D4C293AB0BF00A8952C /* cerocaries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +720,7 @@
 			files = (
 				779B5E7624B504E900D87B1B /* DESelectTimeTableViewCell.swift in Sources */,
 				77C1D5162937BC3300324690 /* AssistiveText.swift in Sources */,
+				778484A7293A55AC00057BE0 /* CeroCariesView.swift in Sources */,
 				779B5E7424B4FBB400D87B1B /* DESelectTimeViewController.swift in Sources */,
 				779B5E8C24C12DA500D87B1B /* DESeeExpedientViewController.swift in Sources */,
 				779B5E4024A685FC00D87B1B /* SLInfoTableViewCell.swift in Sources */,
@@ -591,17 +728,24 @@
 				779B5E7024B3C61A00D87B1B /* DECalendarViewController.swift in Sources */,
 				777B15EF247C9692007D8877 /* BaseViewController.swift in Sources */,
 				779B5E4824ACC81D00D87B1B /* GPCalendarComponent.swift in Sources */,
+				77C1D5322939523800324690 /* MitosView.swift in Sources */,
 				77C1D520293825A400324690 /* InstitutesView.swift in Sources */,
 				77E714BC293698E800AEA542 /* LoginView.swift in Sources */,
 				7777EAF12474AC5400848384 /* LNRecoverPasswordViewController.swift in Sources */,
+				77B12D44293A81CD00A8952C /* SeparatorView.swift in Sources */,
+				77B12D4E293AB0E400A8952C /* CeroCaries.swift in Sources */,
 				772D78FE24901C0100ED1DF4 /* LNCategoryViewController.swift in Sources */,
 				77C1D52A29392A3E00324690 /* Bundle.swift in Sources */,
 				779B5E7C24B6476700D87B1B /* DEPatientTableViewCell.swift in Sources */,
 				776DB285247814F400386CAC /* GPHomeViewController.swift in Sources */,
 				779B5E3C24A666CC00D87B1B /* SLHomeViewController.swift in Sources */,
+				77C1D5412939759F00324690 /* TextPointView.swift in Sources */,
 				7777EAF32474C91C00848384 /* LNRecoverPassAlertViewController.swift in Sources */,
 				779B5E7224B3FF1E00D87B1B /* DEDateCollectionViewCell.swift in Sources */,
+				77C1D52C29392C2100324690 /* Patrocinador.swift in Sources */,
 				77E714B62936723800AEA542 /* CapsuleTextField.swift in Sources */,
+				77B12D48293A8DC300A8952C /* Odontologia.swift in Sources */,
+				77C1D53F2939730C00324690 /* OdontologiaView.swift in Sources */,
 				77E714C92936A7AB00AEA542 /* MenuView.swift in Sources */,
 				772D790024904C4F00ED1DF4 /* LNWelcomeViewController.swift in Sources */,
 				77E714C029369A9400AEA542 /* HomeView.swift in Sources */,
@@ -612,32 +756,41 @@
 				77B1E4522486D5B900CE962A /* LNInstitutionsViewController.swift in Sources */,
 				776DB288247862FF00386CAC /* GPInfoViewController.swift in Sources */,
 				7777EAC0246EE6D600848384 /* LNHomeViewController.swift in Sources */,
+				778484A3293A551100057BE0 /* HomeFactorsView.swift in Sources */,
 				7777EABC246EE6D600848384 /* AppDelegate.swift in Sources */,
 				77E714CB2936AC7800AEA542 /* MenuSectionButton.swift in Sources */,
 				779B5E4E24AE733500D87B1B /* GPUploadProfileViewController.swift in Sources */,
+				77B12D42293A805800A8952C /* ShowMoreOdontologiaView.swift in Sources */,
+				77B12D4A293AACD400A8952C /* CeroCariesInfoView.swift in Sources */,
 				77B1E4542487557300CE962A /* GPChildrenViewController.swift in Sources */,
 				777B162C2485BEAF007D8877 /* LNSlideMenuViewController.swift in Sources */,
 				779B5E4424A6A93F00D87B1B /* NRInfoTableViewCell.swift in Sources */,
+				77B12D40293A686500A8952C /* MitosRealidades.swift in Sources */,
 				779B5E7A24B5768B00D87B1B /* DESelectPatientViewController.swift in Sources */,
 				779B5E4A24ACC87600D87B1B /* GPDateCollectionViewCell.swift in Sources */,
 				776DB27C2475EA4000386CAC /* LNTermsViewController.swift in Sources */,
 				77C1D524293907C700324690 /* FooterNavItemView.swift in Sources */,
+				77C1D530293942AA00324690 /* FooterLineView.swift in Sources */,
 				77C1D522293906BD00324690 /* FooterNavbar.swift in Sources */,
 				7777EABE246EE6D600848384 /* SceneDelegate.swift in Sources */,
 				779B5E8024B90D0600D87B1B /* DESeeCalendarViewController.swift in Sources */,
 				779B5E3E24A66BE700D87B1B /* SLInfoViewController.swift in Sources */,
 				77B1E456248EF66E00CE962A /* GPMedicalRecordViewController.swift in Sources */,
+				778484A9293A567500057BE0 /* LolaPoloView.swift in Sources */,
 				7777EAEF2473332600848384 /* LNLoginViewController.swift in Sources */,
 				779B5E7824B5762500D87B1B /* DEConfirmViewController.swift in Sources */,
 				77C1D51E293822E900324690 /* HeaderSectionView.swift in Sources */,
+				77C1D534293959DD00324690 /* TopicTextView.swift in Sources */,
 				77C1D5182937D3BC00324690 /* TermsControl.swift in Sources */,
 				779B5E4C24AD96BF00D87B1B /* GPCalendarDateViewController.swift in Sources */,
 				779B5E8824BE4FFB00D87B1B /* DESeeCalendarCollectionViewCell.swift in Sources */,
 				779B5E3924A6556400D87B1B /* NRHomeViewController.swift in Sources */,
 				77E714B4293666EC00AEA542 /* CapsuleButton.swift in Sources */,
+				778484A5293A557200057BE0 /* TipsView.swift in Sources */,
 				777B15ED247C7019007D8877 /* GPInfoTableViewCell.swift in Sources */,
 				779B5E8624BDB6E400D87B1B /* DETodayTableViewCell.swift in Sources */,
 				779B5E4624AC19C000D87B1B /* GPCalendarViewController.swift in Sources */,
+				77C1D52E29393A7B00324690 /* SectionHomeButtonView.swift in Sources */,
 				776DB27A2475AA8000386CAC /* LNCreateAccountViewCointroller.swift in Sources */,
 				772D79022490836900ED1DF4 /* DEHomeViewController.swift in Sources */,
 				77B1E458248F089300CE962A /* LNSlideConfigViewController.swift in Sources */,

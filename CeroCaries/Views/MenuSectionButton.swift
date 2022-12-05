@@ -10,11 +10,12 @@ import SwiftUI
 
 struct MenuSectionButton: View {
     
+    @Binding var action: Bool
     let sectionText: String
     
     var body: some View {
         Button(action: {
-            
+            action = true
         }) {
             Text(sectionText.uppercased())
                 .font(.system(size: 20))
@@ -30,7 +31,7 @@ struct MenuSectionButton: View {
 
 struct MenuSectionButton_Previews: PreviewProvider {
     static var previews: some View {
-        MenuSectionButton(sectionText: "instituciones que nos avalan")
+        MenuSectionButton(action: .constant(false), sectionText: "instituciones que nos avalan")
             .previewLayout(.sizeThatFits)
             .padding()
     }

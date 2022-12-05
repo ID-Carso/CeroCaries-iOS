@@ -10,30 +10,38 @@ import SwiftUI
 
 struct HeaderSectionView: View {
     
+    var dismissAction: (() -> Void)
+    let showImage: Bool
     let titleSection: String
     
     var body: some View {
-        HStack(alignment: .top, spacing: 0) {
-            Image(systemName: "chevron.left.circle.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 40, height: 40)
-                .foregroundColor(Color("TopBarColor"))
-                .background(Color("LightBlueColor"))
-                .clipShape(Circle())
-                .padding(.horizontal, 20)
-            
-            VStack(alignment: .center) {
-                Image("logoNav")
+        HStack(alignment: showImage ? .top : .center, spacing: 0) {
+            Button(action: {
+                dismissAction()
+            }) {
+                Image(systemName: "chevron.left.circle.fill")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: widthScreen * 0.25, height: widthScreen * 0.25)
+                    .frame(width: 40, height: 40)
+                    .foregroundColor(Color("TopBarColor"))
+                    .background(Color("LightBlueColor"))
+                    .clipShape(Circle())
+                    .padding(.horizontal, 20)
+            }
+            
+            VStack(alignment: .center) {
+                if showImage {
+                    Image("logoNav")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: widthScreen * 0.25, height: widthScreen * 0.25)
+                }
                 
                 Text(titleSection.uppercased())
-                    .font(.system(size: 12))
+                    .font(.system(size: 20))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
-                    .frame(width: widthScreen * 0.4)
+                    .frame(width: showImage ? widthScreen * 0.8 : widthScreen * 0.6)
             }
             .frame(width: widthScreen * 0.6)
             
@@ -44,10 +52,10 @@ struct HeaderSectionView: View {
     }
 }
 
-struct HeaderSectionView_Previews: PreviewProvider {
+/*struct HeaderSectionView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderSectionView(titleSection: "Calendario")
+        HeaderSectionView(dismissAction: dismiss(), showImage: false, titleSection: "Calendario")
             .previewLayout(.sizeThatFits)
             .padding()
     }
-}
+}*/

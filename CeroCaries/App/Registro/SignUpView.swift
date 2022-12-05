@@ -12,7 +12,6 @@ struct SignUpView: View {
     
     // MARK: - PROPERTIES
     @State var showMenu: Bool = false
-    @State var showSettings: Bool = false
     @State var name: String = ""
     @State var email: String = ""
     @State var password: String = ""
@@ -22,7 +21,7 @@ struct SignUpView: View {
     var body: some View {
         ZStack(alignment: .top) {
             VStack(spacing: 0) {
-                AppBarView(showMenu: $showMenu, showSettings: $showSettings)
+                AppBarView(showMenu: $showMenu)
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 10) {

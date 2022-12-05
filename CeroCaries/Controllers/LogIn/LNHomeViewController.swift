@@ -31,7 +31,7 @@ class LNHomeViewController: BaseViewController {
         createAccountBtn.layer.cornerRadius = 10
         withOutRegisterBtn.layer.cornerRadius = 10
 
-        let root = MainView()
+        let root = HomeView()
         
         let host = UIHostingController(rootView: root)
         self.navigationController?.pushViewController(host, animated: true)

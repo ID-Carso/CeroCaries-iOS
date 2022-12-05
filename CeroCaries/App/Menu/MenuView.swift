@@ -11,9 +11,12 @@ import SwiftUI
 struct MenuView: View {
     
     @Binding var showMenu: Bool
+    @State var loadPage: Bool = false
+    @State var openIns: Bool = false
     
     var body: some View {
         ZStack {
+            NavigationLink(destination: InstitutesView(), isActive: $openIns) { EmptyView() }
             
             GeometryReader { _ in
                 VStack(spacing: 25) {
@@ -23,9 +26,9 @@ struct MenuView: View {
                         .frame(width: widthScreen * 0.6, height: heightScreen * 0.2)
                         .padding(.top, 40)
                     
-                    MenuSectionButton(sectionText: "compartir en rrss")
+                    MenuSectionButton(action: $loadPage, sectionText: "compartir en rrss")
                 
-                    MenuSectionButton(sectionText: "instituciones que nos avalan")
+                    MenuSectionButton(action: $openIns, sectionText: "patrocinadores y colaboradores")
                 
                     Spacer()
                 

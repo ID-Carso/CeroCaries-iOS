@@ -11,7 +11,7 @@ import SwiftUI
 struct AppBarView: View {
     
     @Binding var showMenu: Bool
-    @Binding var showSettings: Bool
+//    @Binding var showSettings: Bool
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -22,26 +22,29 @@ struct AppBarView: View {
             
             AppBarShape()
                 .frame(width: widthScreen, height: heightScreen * 0.15)
-                .foregroundColor(Color("TopBarColor"))
+                .foregroundColor(.white)
             
             
             HStack {
-                Button(action: {
-                    showMenu.toggle()
-                }) {
-                    Image("menuIcon")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(Color("BlueColor"))
+                ZStack(alignment: .leading) {
+                    Button(action: {
+                        showMenu.toggle()
+                    }) {
+                        Image("menuIcon")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(Color("BlueColor"))
+                    }
+
+                    VStack {
+                        Image("logo")
+                            .resizable()
+                            .scaledToFit()
+                        .frame(width: widthScreen * 0.3, height: heightScreen * 0.05)
+                    }
+                    .frame(width: widthScreen * 0.90)
                 }
-                .padding(.leading, 20)
-
-                Spacer()
-
-                Image("logo")
-
-                Spacer()
 
                 /*Button(action: {
                     showSettings.toggle()
@@ -58,7 +61,7 @@ struct AppBarView: View {
 
 struct AppBarView_Previews: PreviewProvider {
     static var previews: some View {
-        AppBarView(showMenu: .constant(false), showSettings: .constant(false))
+        AppBarView(showMenu: .constant(false))
             .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
             .padding()

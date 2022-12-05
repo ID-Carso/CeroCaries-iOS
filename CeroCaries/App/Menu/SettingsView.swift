@@ -11,6 +11,10 @@ import SwiftUI
 struct SettingsView: View {
     
     @Binding var showSettings: Bool
+    @State var openProfile: Bool = false
+    @State var openTutorial: Bool = false
+    @State var openPlot: Bool = false
+    @State var logout: Bool = false
     
     var body: some View {
         ZStack {
@@ -22,13 +26,13 @@ struct SettingsView: View {
                         .frame(width: widthScreen * 0.7, height: heightScreen * 0.2)
                         .padding(.top, 40)
                     
-                    MenuSectionButton(sectionText: "Ver perfil")
+                    MenuSectionButton(action: $openProfile, sectionText: "Ver perfil")
                 
-                    MenuSectionButton(sectionText: "tutorial")
+                    MenuSectionButton(action: $openTutorial, sectionText: "tutorial")
                     
-                    MenuSectionButton(sectionText: "elegir al personaje")
+                    MenuSectionButton(action: $openPlot, sectionText: "elegir al personaje")
                     
-                    MenuSectionButton(sectionText: "cerrar sesión")
+                    MenuSectionButton(action: $logout, sectionText: "cerrar sesión")
                 
                     Spacer()
                 
