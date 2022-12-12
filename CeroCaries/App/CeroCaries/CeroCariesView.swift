@@ -10,17 +10,21 @@ import SwiftUI
 
 struct CeroCariesView: View {
     
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State var showMenu: Bool = false
     @State var returnHome: Bool = false
+    @State var showCeroCariesInfo: Bool = false
     
     var body: some View {
         ZStack(alignment: .top) {
             NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
             
+            NavigationLink(destination: CeroCariesInfoView(), isActive: $showCeroCariesInfo) { EmptyView() }
+            
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
                 
-                HeaderSectionView(dismissAction: { returnHome = true }, showImage: true, titleSection: "qué es cero caries")
+                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: true, titleSection: "qué es cero caries")
                     .offset(y: -20)
                 
                 VStack(spacing: 20) {
@@ -30,13 +34,13 @@ struct CeroCariesView: View {
                     
                     SeparatorView()
                     
-                    TextPointView()
+                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
                     
-                    TextPointView()
+                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
                     
-                    TextPointView()
+                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
                     
-                    BlueActionButton(navigationAction: $showMenu, textButton: "Leer más")
+                    BlueActionButton(navigationAction: $showCeroCariesInfo, textButton: "Leer más", width: widthScreen * 0.6, height: heightScreen * 0.06)
                 }
                 
                 Spacer()

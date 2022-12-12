@@ -49,7 +49,29 @@ struct HomeView: View {
                     SectionHomeButtonView(openView: $openTips, icon: "tipsIcon", sectionText: "tips para el cuidado dental")
                     SectionHomeButtonView(openView: $openTruths, icon: "realidadesIcon", sectionText: "MITOS Y REALIDADES")
                     SectionHomeButtonView(openView: $openHealth, icon: "odontologiaIcon", sectionText: "Odontología de la salud")
-                    SectionHomeButtonView(openView: $openHealth, icon: "schoolIcon", sectionText: "Escuelas libres de caries")
+                    
+                    Button(action: {
+                        if let url = URL(string: "https://www.wikipedia.com") {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
+                        HStack {
+                            Image("schoolIcon")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: heightScreen * 0.04, height: heightScreen * 0.04)
+                            
+                            Text("Escuelas libres de caries".uppercased())
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.leading)
+                                .frame(width: widthScreen * 0.6)
+                        }
+                        .frame(width: widthScreen * 0.8, height: heightScreen * 0.06)
+                        .background(Color("LightBlueColor"))
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
+                    
                     SectionHomeButtonView(openView: $openAbout, icon: "infoIcon", sectionText: "qué es cero caries")
                 }
                 

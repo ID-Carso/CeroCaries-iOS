@@ -33,13 +33,13 @@ struct MainView: View {
                     .frame(width: widthScreen * 0.5, height: widthScreen * 0.5)
                     .padding(.bottom, 20)
                 
-                BlueActionButton(navigationAction: $openLogin, textButton: "Iniciar sesión")
+                BlueActionButton(navigationAction: $openLogin, textButton: "Iniciar sesión", width: widthScreen * 0.6, height: heightScreen * 0.06)
                     .padding(.vertical, 20)
                 
-                BlueActionButton(navigationAction: $openSignUp, textButton: "Crear cuenta")
+                BlueActionButton(navigationAction: $openSignUp, textButton: "Crear cuenta", width: widthScreen * 0.6, height: heightScreen * 0.06)
                     .padding(.vertical, 20)
                 
-                BlueActionButton(navigationAction: $openGuest, textButton: "Ingresar sin registro")
+                BlueActionButton(navigationAction: $openGuest, textButton: "Ingresar sin registro", width: widthScreen * 0.6, height: heightScreen * 0.06)
                     .padding(.vertical, 20)
                 
                 Spacer()

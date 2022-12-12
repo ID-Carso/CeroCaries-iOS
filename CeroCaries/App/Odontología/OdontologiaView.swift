@@ -12,10 +12,13 @@ struct OdontologiaView: View {
     
     @State var showMenu: Bool = false
     @State var returnHome: Bool = false
+    @State var showOdontologiaInfo: Bool = false
     
     var body: some View {
         ZStack(alignment: .top) {
             NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
+            
+            NavigationLink(destination: ShowMoreOdontologiaView(), isActive: $showOdontologiaInfo) { EmptyView() }
             
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
@@ -30,13 +33,13 @@ struct OdontologiaView: View {
                     
                     SeparatorView()
                     
-                    TextPointView()
+                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
                     
-                    TextPointView()
+                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
                     
-                    TextPointView()
+                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
                     
-                    BlueActionButton(navigationAction: $showMenu, textButton: "Leer más")
+                    BlueActionButton(navigationAction: $showOdontologiaInfo, textButton: "Leer más", width: widthScreen * 0.6, height: heightScreen * 0.06)
                 }
                 
                 Spacer()

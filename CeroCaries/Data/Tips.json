@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "nombre": "0 a 6 años",
+      "titulo": "0 a 6",
+      "tip": "El Programa Generación Cero Caries® es el resultado de más de 30 años de investigación. Promueve un estilo de vida saludable basándose en la medicina preventiva y en el control de factores de riesgo, para impedir el desarrollo de padecimientos bucodentales y contribuir a la salud general del individuo, desde su nacimiento hasta su vejez."
+    },
+    {
+      "id": 2,
+      "nombre": "6 a 12 años",
+      "titulo": "6 a 12",
+      "tip": "El Programa Generación Cero Caries® es el resultado de más de 30 años de investigación. Promueve un estilo de vida saludable basándose en la medicina preventiva y en el control de factores de riesgo, para impedir el desarrollo de padecimientos bucodentales y contribuir a la salud general del individuo, desde su nacimiento hasta su vejez."
+    },
+    {
+      "id": 3,
+      "nombre": "12 a 18 años",
+      "titulo": "12 a 18",
+      "tip": "El Programa Generación Cero Caries® es el resultado de más de 30 años de investigación. Promueve un estilo de vida saludable basándose en la medicina preventiva y en el control de factores de riesgo, para impedir el desarrollo de padecimientos bucodentales y contribuir a la salud general del individuo, desde su nacimiento hasta su vejez."
+    },
+    {
+      "id": 4,
+      "nombre": "Mayores de 18 años",
+      "titulo": "+18",
+      "tip": "El Programa Generación Cero Caries® es el resultado de más de 30 años de investigación. Promueve un estilo de vida saludable basándose en la medicina preventiva y en el control de factores de riesgo, para impedir el desarrollo de padecimientos bucodentales y contribuir a la salud general del individuo, desde su nacimiento hasta su vejez."
+    }
+]

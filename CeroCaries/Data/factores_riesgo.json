@@ -1,0 +1,774 @@
+[
+    {
+      "id": 1,
+      "nombre": "0 a 6 años",
+      "titulo": "0 a 6",
+      "tip": "El Programa Generación Cero Caries® es el resultado de más de 30 años de investigación. Promueve un estilo de vida saludable basándose en la medicina preventiva y en el control de factores de riesgo, para impedir el desarrollo de padecimientos bucodentales y contribuir a la salud general del individuo, desde su nacimiento hasta su vejez.",
+      "factores_generales": [
+          {
+              "id": 1,
+              "pregunta": "Dieta frecuente altamente cariogénica.",
+              "info_type": 1,
+              "description": ""
+          },
+          {
+              "id": 2,
+              "pregunta": "Consumo de alimentos cariogénicos de consistencia y textura de difícil eliminación.",
+              "info_type": 2,
+              "description": "Consistencia: Viscosos y pegajosos, en polvorón y alimentos retentivos, puesto que son más difíciles de eliminar mediante el flujo salival y actividad de músculos masticadores.\nTextura: Blanda,  pues disminuye la actividad de la masticación y flujo salival."
+          },
+          {
+              "id": 3,
+              "pregunta": "Consumo de alimentos cariogénicos entre comidas (colaciones) con frecuencia mayor a dos veces al día.",
+              "info_type": 1,
+              "description": ""
+          },
+          {
+              "id": 4,
+              "pregunta": "Uso de biberón por más de un año;  y/o tomas  nocturnas frecuentes a base de leche de fórmula, té, bebidas endulzadas o condensadas.",
+              "info_type": 0,
+              "description": ""
+          },
+          {
+              "id": 5,
+              "pregunta": "Consumo frecuente de alimentos ácidos.",
+              "info_type": 1,
+              "description": ""
+          },
+          {
+              "id": 6,
+              "pregunta": "Lactancia materna prolongada a libre demanda por más de dos años acompañada de leche de formula y/o dieta suplementaria cariogénica.",
+              "info_type": 0,
+              "description": ""
+          },
+          {
+              "id": 7,
+              "pregunta": "Deficiente salud familiar.",
+              "info_type": 2,
+              "description": "El presentar tratamientos dentales restaurativos y perdidos de dientes debido a caries en la línea de vida del familiar o cuidador del niño se cataloga como deficiente salud bucal, así mismo, esto  impacta de manera negativa en el niño; pues los hábitos socioculturales e higiénico-dietéticos se trasmiten a las siguientes generaciones."
+          },
+          {
+              "id": 8,
+              "pregunta": "Cuidado dental profesional poco frecuente.",
+              "info_type": 2,
+              "description": "Las visitas periódicas  al odontopediatra por lo menos 2 a 3 veces por año son elementales para mantener una adecuada salud bucal y ejercer la odontología preventiva."
+          },
+          {
+              "id": 9,
+              "pregunta": "Técnica de higiene bucal deficiente sin reforzamiento por padres o cuidador.",
+              "info_type": 2,
+              "description": "Es importante resaltar que el hábito de la higiene bucal engloba varios factores; entre ellos: La frecuencia estipulada de 3 veces al día, sugerida después de cada alimento, el uso de pasta fluorada dosificada según las indicaciones de su odontopediatra, la incorporación del hilo dental  e indicaciones de enjuague bucal en caso de ser necesarios; así también, cabe resaltar que la técnica de cepillado debe de ser reforzada por padres de familia o cuidadores, ya que los niños de este grupo de edad no tiene la capacidad motriz fina para hacer un cepillado eficiente."
+          },
+          {
+              "id": 10,
+              "pregunta": "Ingesta prolongada o permanente de medicamentos por condición médica.",
+              "info_type": 2,
+              "description": "El uso de medicamentos de forma crónica en suspensión y jarabe pueden influir de manera directa; ya que son medicamentos con agentes colorantes y endulzantes."
+          },
+          {
+              "id": 11,
+              "pregunta": "Tratamiento actual o antecedente de quimioterapia o radiación de cabeza o cuello.",
+              "info_type": 0,
+              "description": ""
+          },
+          {
+              "id": 12,
+              "pregunta": "Xerostomia",
+              "info_type": 2,
+              "description": "La xerostomía es un síntoma de la baja producción de saliva, percibiendo una sensación de “boca seca”."
+          },
+          {
+              "id": 13,
+              "pregunta": "Necesidad de cuidados de salud especial por alguna discapacidad física o mental que impidan o limitan la adecuada higiene bucal.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 14,
+              "pregunta": "Desnutrición y mala alimentación.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 15,
+              "pregunta": "Enfermedades sistémicas",
+              "info_type": 0,
+              "description": "",
+          }
+      ],
+      "factores_locales": [
+          {
+              "id": 1,
+              "pregunta": "Detección visual de Caries oclusales, superficies lisas  y/o interproximales (desde la desmineralización hasta la cavidad).",
+              "info_type": 3,
+              "description": "",
+          },
+          {
+              "id": 2,
+              "pregunta": "Detección radiográfica de caries interproximales.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 3,
+              "pregunta": "Deficiente higiene bucal (placa dentobacteriana visible).",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 4,
+              "pregunta": "Placa dentobacteriana visible bajo un agente de tinción. (mayor de 25% de las superficies dentales teñidas).",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 5,
+              "pregunta": "Bajo flujo salival.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 6,
+              "pregunta": "Tratamiento dental interceptivo o curativo (o bturaciones) en los últimos 12 meses debido a caries.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 7,
+              "pregunta": "Dientes perdidos por caries en los últimos 12 meses.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 8,
+              "pregunta": "Anormalidades anatómicas genéticas de los dientes.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 9,
+              "pregunta": "Presencia de defectos estructurales del esmalte.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 10,
+              "pregunta": "Fosas y fisuras anatómicamente retentivas.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 11,
+              "pregunta": "Maloclusión dental",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 12,
+              "pregunta": "Ausencia de espacios primates y fisiológicos.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 13,
+              "pregunta": "Presencia de aparatología ortopédica fija y/o removible.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 14,
+              "pregunta": "Bajo tono Muscular de labios, carrillos y lengua.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 15,
+              "pregunta": "Abrasión dental ácida.",
+              "info_type": 0,
+              "description": "",
+          }
+      ],
+      "bibliografia": ["1. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "2. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "3. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "4. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "5. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "6. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "7. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "8. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "9. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "10. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157."],
+      "factores_texto":"\"La Organización Mundial de la Salud (OMS) recomienda que la salud oral se integre en el marco general de prevención.\nLa salud del individuo inicia en la boca y es importante integrarla a través de los factores de riesgo para prevenir caries y\/o enfermedad periodontal, así como, otras enfermedades crónicas. La Organización Panamericana de la Salud\/Organización Mundial de la Salud (OPS\/OMS.  Infiere que \"Hay que valorar y proteger la salud bucodental antes de que ocurran los problemas\".",
+      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud."
+    },
+    {
+      "id": 2,
+      "nombre": "6 a 12 años",
+      "titulo": "6 a 12",
+      "tip": "El Programa Generación Cero Caries® es el resultado de más de 30 años de investigación. Promueve un estilo de vida saludable basándose en la medicina preventiva y en el control de factores de riesgo, para impedir el desarrollo de padecimientos bucodentales y contribuir a la salud general del individuo, desde su nacimiento hasta su vejez.",
+      "factores_generales": [
+          {
+              "id": 1,
+              "pregunta": "Dieta frecuente altamente cariogénica.",
+              "info_type": 1,
+              "description": "",
+          },
+          {
+              "id": 2,
+              "pregunta": "Consumo de alimentos cariogénicos de consistencia y textura de difícil eliminación.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 3,
+              "pregunta": "Consumo de alimentos cariogénicos entre comidas (colaciones) con frecuencia mayor a dos veces al día.",
+              "info_type": 1,
+              "description": "",
+          },
+          {
+              "id": 4,
+              "pregunta": "Consumo frecuente de alimentos ácidos.",
+              "info_type": 1,
+              "description": "",
+          },
+          {
+              "id": 5,
+              "pregunta": "Deficiente salud familiar.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 6,
+              "pregunta": "Cuidado dental profesional poco frecuente.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 7,
+              "pregunta": "Técnica de higiene bucal deficiente sin reforzamiento por padres o cuidador.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 8,
+              "pregunta": "Ingesta prolongada o permanente de medicamentos por condición médica.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 9,
+              "pregunta": "Tratamiento actual o antecedente de quimioterapia o radiación de cabeza o cuello.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 10,
+              "pregunta": "Xerostomia",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 11,
+              "pregunta": "Necesidad de cuidados de salud especial por alguna discapacidad física o mental que impidan o limitan la adecuada higiene bucal.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 12,
+              "pregunta": "Desnutrición y mala alimentación.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 13,
+              "pregunta": "Enfermedades sistémicas",
+              "info_type": 0,
+              "description": "",
+          }
+      ],
+      "factores_locales": [
+          {
+              "id": 1,
+              "pregunta": "Detección visual de Caries oclusales, superficies lisas  y/o interproximales (desde la desmineralización hasta la cavidad).",
+              "info_type": 3,
+              "description": "",
+          },
+          {
+              "id": 2,
+              "pregunta": "Detección radiográfica de caries interproximales.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 3,
+              "pregunta": "Deficiente higiene bucal (placa dentobacteriana visible).",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 4,
+              "pregunta": "Placa dentobacteriana visible bajo un agente de tinción. (mayor de 25% de las superficies dentales teñidas).",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 5,
+              "pregunta": "Bajo flujo salival.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 6,
+              "pregunta": "Tratamiento dental interceptivo o curativo (obturaciones) en los últimos 12 meses debido a caries.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 7,
+              "pregunta": "Dientes perdidos por caries en los últimos 12 meses.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 8,
+              "pregunta": "Anormalidades anatómicas genéticas de los dientes.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 9,
+              "pregunta": "Presencia de defectos estructurales del esmalte.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 10,
+              "pregunta": "Fosas y fisuras anatómicamente retentivas.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 11,
+              "pregunta": "Maloclusión dental.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 12,
+              "pregunta": "Ausencia de espacios primates y fisiológicos.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 13,
+              "pregunta": "Presencia de aparatología ortopédica fija y/o removible.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 14,
+              "pregunta": "Bajo tono Muscular de labios, carrillos y lengua.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 15,
+              "pregunta": "Abrasión dental ácida.",
+              "info_type": 0,
+              "description": "",
+          }
+      ],
+      "bibliografia": ["1. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "2. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "3. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "4. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "5. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "6. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "7. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "8. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "9. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "10. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157."],
+      "factores_texto": "",
+      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud."
+    },
+    {
+      "id": 3,
+      "nombre": "12 a 18 años",
+      "titulo": "12 a 18",
+      "tip": "El Programa Generación Cero Caries® es el resultado de más de 30 años de investigación. Promueve un estilo de vida saludable basándose en la medicina preventiva y en el control de factores de riesgo, para impedir el desarrollo de padecimientos bucodentales y contribuir a la salud general del individuo, desde su nacimiento hasta su vejez.",
+      "factores_generales": [
+          {
+              "id": 1,
+              "pregunta": "Dieta frecuente altamente cariogénica.",
+              "info_type": 1,
+              "description": "",
+          },
+          {
+              "id": 2,
+              "pregunta": "Consumo de alimentos cariogénicos de consistencia y textura de difícil eliminación.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 3,
+              "pregunta": "Consumo de alimentos cariogénicos entre comidas (colaciones) con frecuencia mayor a dos veces al día.",
+              "info_type": 1,
+              "description": "",
+          },
+          {
+              "id": 4,
+              "pregunta": "Consumo frecuente de alimentos ácidos.",
+              "info_type": 1,
+              "description": "",
+          },
+          {
+              "id": 5,
+              "pregunta": "Deficiente salud familiar.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 6,
+              "pregunta": "Cuidado dental profesional poco frecuente.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 7,
+              "pregunta": "Técnica de higiene bucal deficiente.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 8,
+              "pregunta": "Ingesta prolongada o permanente de medicamentos por condición médica.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 9,
+              "pregunta": "Tratamiento actual o antecedente de quimioterapia o radiación de cabeza o cuello.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 10,
+              "pregunta": "Xerostomia",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 11,
+              "pregunta": "Necesidad de cuidados de salud especial por alguna discapacidad física o mental que impidan o limitan la adecuada higiene bucal.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 12,
+              "pregunta": "Desnutrición, mala alimentación y/o trastornos alimenticios (bulimia-anorexia).",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 13,
+              "pregunta": "Enfermedades sistémicas",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 14,
+              "pregunta": "Consumo de alcohol, tabaco o drogas.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 15,
+              "pregunta": "Enfermedades de transmisión sexual.",
+              "info_type": 0,
+              "description": "",
+          }
+      ],
+      "factores_locales": [
+          {
+              "id": 1,
+              "pregunta": "Detección visual de Caries oclusales, superficies lisas  y/o interproximales (desde la desmineralización hasta la cavidad).",
+              "info_type": 3,
+              "description": "",
+          },
+          {
+              "id": 2,
+              "pregunta": "Detección radiográfica de caries interproximales.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 3,
+              "pregunta": "Deficiente higiene bucal (placa dentobacteriana visible).",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 4,
+              "pregunta": "Placa dentobacteriana visible bajo un agente de tinción. (mayor de 25% de las superficies dentales teñidas).",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 5,
+              "pregunta": "Bajo flujo salival.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 6,
+              "pregunta": "Tratamiento dental interceptivo o curativo (obturaciones) en los últimos 12 meses debido a caries.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 7,
+              "pregunta": "Dientes perdidos por caries en los últimos 12 meses.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 8,
+              "pregunta": "Anormalidades anatómicas genéticas de los dientes.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 9,
+              "pregunta": "Presencia de defectos estructurales del esmalte.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 10,
+              "pregunta": "Fosas y fisuras anatómicamente retentivas.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 11,
+              "pregunta": "Maloclusión dental.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 12,
+              "pregunta": "Exposición radicular.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 13,
+              "pregunta": "Presencia de piercing.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 14,
+              "pregunta": "Presencia de aparatología fija de ortodoncia.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 15,
+              "pregunta": "Bajo tono Muscular de labios, carrillos y lengua.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 16,
+              "pregunta": "Abrasión dental ácida.",
+              "info_type": 0,
+              "description": "",
+          }
+      ],
+      "bibliografia": ["1. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "2. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "3. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "4. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "5. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "6. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "7. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "8. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "9. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "10. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157."],
+      "factores_texto": "",
+      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud."
+    },
+    {
+      "id": 4,
+      "nombre": "Mayores de 18 años",
+      "titulo": "+18",
+      "tip": "El Programa Generación Cero Caries® es el resultado de más de 30 años de investigación. Promueve un estilo de vida saludable basándose en la medicina preventiva y en el control de factores de riesgo, para impedir el desarrollo de padecimientos bucodentales y contribuir a la salud general del individuo, desde su nacimiento hasta su vejez.",
+      "factores_generales": [
+          {
+              "id": 1,
+              "pregunta": "Dieta frecuente altamente cariogénica.",
+              "info_type": 1,
+              "description": "",
+          },
+          {
+              "id": 2,
+              "pregunta": "Consumo de alimentos cariogénicos de consistencia y textura de difícil eliminación.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 3,
+              "pregunta": "Consumo de alimentos cariogénicos entre comidas (colaciones) con frecuencia mayor a dos veces al día.",
+              "info_type": 1,
+              "description": "",
+          },
+          {
+              "id": 4,
+              "pregunta": "Consumo frecuente de alimentos ácidos.",
+              "info_type": 1,
+              "description": "",
+          },
+          {
+              "id": 5,
+              "pregunta": "Sangrado de las encías, movilidad dental, hipersensibilidad dental  y/o halitosis.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 6,
+              "pregunta": "Cuidado dental profesional poco frecuente.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 7,
+              "pregunta": "Técnica de higiene bucal deficiente.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 8,
+              "pregunta": "Ingesta prolongada o permanente de medicamentos por condición médica.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 9,
+              "pregunta": "Tratamiento actual o antecedente de quimioterapia o radiación de cabeza o cuello.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 10,
+              "pregunta": "Calidad y cantidad salival. Xerostomia",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 11,
+              "pregunta": "Necesidad de cuidados de salud especial por alguna discapacidad física o mental que impidan o limitan la adecuada higiene bucal.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 12,
+              "pregunta": "Desnutrición, mala alimentación y/o trastornos alimenticios (bulimia-anorexia).",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 13,
+              "pregunta": "Enfermedades sistémicas.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 14,
+              "pregunta": "Consumo de alcohol, tabaco o drogas.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 15,
+              "pregunta": "Enfermedades de transmisión sexual.",
+              "info_type": 0,
+              "description": "",
+          }
+      ],
+      "factores_locales": [
+          {
+              "id": 1,
+              "pregunta": "Detección visual de Caries oclusales, superficies lisas  y/o interproximales (desde la desmineralización hasta la cavidad).",
+              "info_type": 3,
+              "description": "",
+          },
+          {
+              "id": 2,
+              "pregunta": "Detección radiográfica de caries interproximales y defectos de hueso alveolar.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 3,
+              "pregunta": "Deficiente higiene bucal (placa dentobacteriana visible).",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 4,
+              "pregunta": "Placa dentobacteriana visible bajo un agente de tinción. (mayor de 25% de las superficies dentales teñidas).  acompañada de inflamación de encías y sangrado.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 5,
+              "pregunta": "Bajo flujo salival.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 6,
+              "pregunta": "Tratamiento dental curativo (obturaciones, prótesis dental, coronas) en los últimos 12 meses debido a caries.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 7,
+              "pregunta": "Dientes perdidos por caries en los últimos 12 meses. (Dentición incompleta).",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 8,
+              "pregunta": "Anormalidades anatómicas genéticas de los dientes.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 9,
+              "pregunta": "Presencia de defectos estructurales del esmalte.",
+              "info_type": 2,
+              "description": "",
+          },
+          {
+              "id": 10,
+              "pregunta": "Fosas y fisuras anatómicamente retentivas.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 11,
+              "pregunta": "Maloclusión dental. Apiñamiento dental.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 12,
+              "pregunta": "Exposición radicular y pérdida de inserción clínica.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 13,
+              "pregunta": "Presencia de piercing.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 14,
+              "pregunta": "Presencia de aparatología fija de ortodoncia.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 15,
+              "pregunta": "Bajo tono Muscular de labios, carrillos y lengua.",
+              "info_type": 0,
+              "description": "",
+          },
+          {
+              "id": 16,
+              "pregunta": "Abrasión dental ácida.",
+              "info_type": 0,
+              "description": "",
+          }
+      ],
+      "bibliografia": ["1. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "2. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "3. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "4. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "5. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "6. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "7. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "8. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "9. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "10. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157."],
+      "factores_texto": "",
+      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud."
+    }
+]

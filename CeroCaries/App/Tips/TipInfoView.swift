@@ -1,36 +1,33 @@
 //
-//  HomeFactorsView.swift
+//  TipInfoView.swift
 //  CeroCaries
 //
-//  Created by Alex Barreto on 02/12/22.
+//  Created by Alex Barreto on 05/12/22.
 //  Copyright © 2022 Grupo Carso. All rights reserved.
 //
 
 import SwiftUI
 
-struct HomeFactorsView: View {
+struct TipInfoView: View {
     
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State var showMenu: Bool = false
     @State var returnHome: Bool = false
-    @State var showCategorySection: Bool = false
-    @State var index: Int = 0
+    @Binding var index: Int
     
-    let factores: [FactorRiesgo] = Bundle.main.decode("factores_riesgo.json")
+    let tips: [Tip] = Bundle.main.decode("Tips.json")
     
     var body: some View {
         ZStack(alignment: .top) {
             NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
             
-            NavigationLink(destination: PreguntasFactoresGeneralesView(factor: factores[index]), isActive: $showCategorySection) { EmptyView() }
-            
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
                 
-                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: true, titleSection: "Factores de riesgo")
+                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: false, titleSection: "Tips para el cuidado bucodental")
                     .offset(y: -20)
                 
-                FactoresRiesgoCategoryView(index: $index, showInfo: $showCategorySection)
+                TipsTabView(index: $index, tips: tips)
                 
                 Spacer()
                 
@@ -52,8 +49,8 @@ struct HomeFactorsView: View {
     }
 }
 
-struct HomeFactorsView_Previews: PreviewProvider {
+struct TipInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeFactorsView()
+        TipInfoView(index: .constant(1))
     }
 }

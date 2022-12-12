@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "niñosfondo.png",
+      "filename" : "bitmap.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "bitmap@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "bitmap@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

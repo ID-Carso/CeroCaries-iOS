@@ -11,6 +11,7 @@ import SwiftUI
 struct MitosView: View {
     
     // MARK: - PROPERTIES
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State var showMenu: Bool = false
     @State var returnHome: Bool = false
     
@@ -23,7 +24,8 @@ struct MitosView: View {
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
                 
-                HeaderSectionView(dismissAction: { returnHome = true }, showImage: false, titleSection: "Mitos y realidades")
+                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss()
+                }, showImage: false, titleSection: "Mitos y realidades")
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     Image("mitosImage")

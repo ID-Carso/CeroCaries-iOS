@@ -1,36 +1,35 @@
 //
-//  HomeFactorsView.swift
+//  CariogenicosView.swift
 //  CeroCaries
 //
-//  Created by Alex Barreto on 02/12/22.
+//  Created by Alex Barreto on 07/12/22.
 //  Copyright © 2022 Grupo Carso. All rights reserved.
 //
 
 import SwiftUI
 
-struct HomeFactorsView: View {
+struct CariogenicosView: View {
     
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State var showMenu: Bool = false
     @State var returnHome: Bool = false
-    @State var showCategorySection: Bool = false
-    @State var index: Int = 0
-    
-    let factores: [FactorRiesgo] = Bundle.main.decode("factores_riesgo.json")
     
     var body: some View {
         ZStack(alignment: .top) {
             NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
             
-            NavigationLink(destination: PreguntasFactoresGeneralesView(factor: factores[index]), isActive: $showCategorySection) { EmptyView() }
-            
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
                 
-                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: true, titleSection: "Factores de riesgo")
+                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: false, titleSection: "Tipos de alimentos según")
                     .offset(y: -20)
                 
-                FactoresRiesgoCategoryView(index: $index, showInfo: $showCategorySection)
+                Text("Riesgo cariogénico".uppercased())
+                    .font(.system(size: 24))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color("LightBlueColor"))
+                
+                
                 
                 Spacer()
                 
@@ -52,8 +51,8 @@ struct HomeFactorsView: View {
     }
 }
 
-struct HomeFactorsView_Previews: PreviewProvider {
+struct CariogenicosView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeFactorsView()
+        CariogenicosView()
     }
 }

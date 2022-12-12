@@ -11,6 +11,7 @@ import SwiftUI
 struct InstitutesView: View {
     
     // MARK: - PROPERTIES
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State var showMenu: Bool = false
     @State var returnHome: Bool = false
     
@@ -21,7 +22,7 @@ struct InstitutesView: View {
             VStack {
                 AppBarView(showMenu: $showMenu)
                 
-                HeaderSectionView(dismissAction: { returnHome = true }, showImage: true, titleSection: patrocinadores.titleSection)
+                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: true, titleSection: patrocinadores.titleSection)
                     .offset(y: -20)
                 
                 VStack {

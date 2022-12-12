@@ -1,36 +1,43 @@
 //
-//  HomeFactorsView.swift
+//  BibliografiaView.swift
 //  CeroCaries
 //
-//  Created by Alex Barreto on 02/12/22.
+//  Created by Alex Barreto on 06/12/22.
 //  Copyright © 2022 Grupo Carso. All rights reserved.
 //
 
 import SwiftUI
 
-struct HomeFactorsView: View {
+struct BibliografiaView: View {
     
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State var showMenu: Bool = false
     @State var returnHome: Bool = false
-    @State var showCategorySection: Bool = false
-    @State var index: Int = 0
     
-    let factores: [FactorRiesgo] = Bundle.main.decode("factores_riesgo.json")
+    let refs: [String]
     
     var body: some View {
         ZStack(alignment: .top) {
             NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
             
-            NavigationLink(destination: PreguntasFactoresGeneralesView(factor: factores[index]), isActive: $showCategorySection) { EmptyView() }
+            NavigationLink(destination: CeroCariesInfoView()) { EmptyView() }
             
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
                 
-                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: true, titleSection: "Factores de riesgo")
+                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: false, titleSection: "Bibliografía")
                     .offset(y: -20)
                 
-                FactoresRiesgoCategoryView(index: $index, showInfo: $showCategorySection)
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(spacing: 20) {
+                        ForEach(refs, id: \.self) { ref in
+                            Text(ref)
+                                .font(.system(size: 16))
+                                .multilineTextAlignment(.leading)
+                                .padding(.horizontal)
+                        }
+                    }
+                }
                 
                 Spacer()
                 
@@ -52,8 +59,10 @@ struct HomeFactorsView: View {
     }
 }
 
-struct HomeFactorsView_Previews: PreviewProvider {
+struct BibliografiaView_Previews: PreviewProvider {
+    static let factores: [FactorRiesgo] = Bundle.main.decode("factores_riesgo.json")
+    
     static var previews: some View {
-        HomeFactorsView()
+        BibliografiaView(refs: factores[0].bibliografia)
     }
 }

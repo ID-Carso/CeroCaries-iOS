@@ -26,7 +26,18 @@ struct MenuView: View {
                         .frame(width: widthScreen * 0.6, height: heightScreen * 0.2)
                         .padding(.top, 40)
                     
-                    MenuSectionButton(action: $loadPage, sectionText: "compartir en rrss")
+                    Button(action: {
+                        actionSheet()
+                    }) {
+                        Text("compartir app".uppercased())
+                            .font(.system(size: 20))
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .frame(width: widthScreen * 0.7, height: heightScreen * 0.08, alignment: .leading)
+                            .multilineTextAlignment(.leading)
+                            .padding(.horizontal)
+                            .background(Color("BlueColor"))
+                    }
                 
                     MenuSectionButton(action: $openIns, sectionText: "patrocinadores y colaboradores")
                 
@@ -58,6 +69,12 @@ struct MenuView: View {
             }
         }
     }
+    
+    func actionSheet() {
+           guard let urlShare = URL(string: "https://apps.apple.com/mx/app/escuder%C3%ADa-telmex/id463374713") else { return }
+           let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
+           UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+       }
 }
 
 struct MenuView_Previews: PreviewProvider {

@@ -50,7 +50,7 @@ struct SignUpView: View {
                         
                         TermsControl(aceptTerms: $termsAccepted)
                         
-                        BlueActionButton(navigationAction: $continueAction, textButton: "Siguiente")
+                        BlueActionButton(navigationAction: $continueAction, textButton: "Siguiente", width: widthScreen * 0.8, height: heightScreen * 0.06)
                         
                         // Add opacity with ternary operation with binding boolean value from viewmodel
                         AssistiveText(leadingIcon: nil, text: "Debes aceptar los términos y condiciones", textColor: "RedColor", alignment: .center)

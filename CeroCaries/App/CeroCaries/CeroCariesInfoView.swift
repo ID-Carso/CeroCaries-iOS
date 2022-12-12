@@ -10,6 +10,7 @@ import SwiftUI
 
 struct CeroCariesInfoView: View {
     
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State var showMenu: Bool = false
     @State var returnHome: Bool = false
     
@@ -22,7 +23,7 @@ struct CeroCariesInfoView: View {
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
                 
-                HeaderSectionView(dismissAction: { returnHome = true }, showImage: true, titleSection: "Qué es cero caries")
+                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: true, titleSection: "Qué es cero caries")
                     .offset(y: -20)
                 
                 ScrollView(.vertical, showsIndicators: false) {
@@ -35,6 +36,20 @@ struct CeroCariesInfoView: View {
                         
                         // Add text details
                         Text(info.info)
+                            .padding(.horizontal)
+                        
+                        ImageInfoView(image: "infografia", width: widthScreen * 0.8, height: widthScreen * 0.8)
+                        
+                        SeparatorView()
+                        
+                        Text(info.info2)
+                            .padding(.horizontal)
+                        
+                        ImageInfoView(image: "clinicabecerra", width: widthScreen * 0.6, height: widthScreen * 0.8)
+                        
+                        SeparatorView()
+                        
+                        Text(info.info3)
                             .padding(.horizontal)
                         
                     }
