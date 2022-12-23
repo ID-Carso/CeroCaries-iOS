@@ -14,6 +14,8 @@ struct CariogenicosView: View {
     @State var showMenu: Bool = false
     @State var returnHome: Bool = false
     
+    let alimentos: [Cariogenico]
+    
     var body: some View {
         ZStack(alignment: .top) {
             NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
@@ -25,11 +27,11 @@ struct CariogenicosView: View {
                     .offset(y: -20)
                 
                 Text("Riesgo cariogénico".uppercased())
-                    .font(.system(size: 24))
-                    .fontWeight(.bold)
+                    .font(Font(AppFonts.categoryButtonTextBold))
                     .foregroundColor(Color("LightBlueColor"))
+                    .padding(.bottom, 15)
                 
-                
+                CariogenicosTabBarView(alimentos: alimentos)
                 
                 Spacer()
                 
@@ -39,6 +41,17 @@ struct CariogenicosView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }
@@ -52,7 +65,9 @@ struct CariogenicosView: View {
 }
 
 struct CariogenicosView_Previews: PreviewProvider {
+    static let factores: [FactorRiesgo] = Bundle.main.decode("factores_riesgo.json")
+    
     static var previews: some View {
-        CariogenicosView()
+        CariogenicosView(alimentos: factores[0].cariogenicos)
     }
 }

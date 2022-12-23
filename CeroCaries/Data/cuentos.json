@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "titulo": "Lola y Polo en el Reino de las golosinas",
+        "imagenes": [
+            "golosinas",
+            "batallasucia",
+            "niñosfondo"
+        ],
+        "primaryColor": "purple",
+        "secondaryColor": "white"
+    },
+    {
+        "id": 2,
+        "titulo": "Lola y Polo en: una batalla sucia",
+        "imagenes": [
+            "batallasucia",
+            "golosinas",
+            "niñosfondo"
+        ],
+        "primaryColor": "white",
+        "secondaryColor": "blue"
+    }
+]

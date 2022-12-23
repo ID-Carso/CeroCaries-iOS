@@ -28,31 +28,33 @@ struct TipsTabView: View {
                 ForEach(tips) { tip in
                     VStack {
                         Text(tip.nombre)
-                            .font(.system(size: 20))
-                            .fontWeight(.bold)
+                            .font(Font(AppFonts.headerSectionTitle))
                             .foregroundColor(Color("BlueColor"))
                         
-                        ScrollView(.vertical, showsIndicators: false) {
-                            VStack(spacing: 20) {
-                                ZStack {
-                                    Image("mitosImage")
+                        ZStack {
+                            Image(tip.background)
+                                .resizable()
+                                .scaledToFit()
+                            
+                            ScrollView(.vertical, showsIndicators: false) {
+                                VStack(spacing: 20) {
+                                    Image(tip.image)
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: widthScreen * 0.8, height: heightScreen * 0.22)
                                         .padding(5)
+                                    
+                                    Text(tip.tip)
+                                        .font(Font(AppFonts.regularText))
+                                    
+                                    Spacer()
+                                    
                                 }
-                                .frame(width: widthScreen * 0.85, height: heightScreen * 0.24)
-                                .background(LinearGradient(gradient: Gradient(colors: [Color("LightBlueColor"), Color("BlueColor")]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                                
-                                Text(tip.tip)
-                                    .font(.system(size: 16))
-                                    .fontWeight(.semibold)
-                                
+                                .padding(15)
                             }
-                            .padding(15)
+                            .frame(width: widthScreen * 0.9, height: heightScreen * 0.5)
+                            
                         }
-                        .frame(width: widthScreen * 0.9, height: heightScreen * 0.5)
-                        .background(Color.gray.opacity(0.5))
                     }
                     .tag(tip.id)
                 }

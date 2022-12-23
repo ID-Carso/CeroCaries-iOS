@@ -21,14 +21,11 @@ struct BlueActionButton: View {
             navigationAction = true
         }) {
             Text(textButton)
-                .fontWeight(.semibold)
+                .font(Font(AppFonts.secondaryActionButtonText))
                 .foregroundColor(.white)
                 .frame(width: width, height: height)
                 .background(Color("LightBlueColor"))
                 .cornerRadius(15)
-                .background(
-                    RoundedRectangle(cornerRadius: 15, style: .continuous)
-                )
         }
     }
 }

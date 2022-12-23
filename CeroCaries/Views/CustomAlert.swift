@@ -87,7 +87,7 @@ struct CustomAlert: View {
     private var messageView: some View {
         if !message.isEmpty {
             Text(message)
-                .font(.system(size: title.isEmpty ? 18 : 16))
+                .font(Font(AppFonts.regularText))
                 .foregroundColor(title.isEmpty ? .black : .gray)
                 .lineSpacing(24 - UIFont.systemFont(ofSize: title.isEmpty ? 18 : 16).lineHeight)
                 .multilineTextAlignment(.leading)
@@ -143,7 +143,7 @@ struct CustomAlert: View {
         if let button = dismissButton {
             CustomAlertButton(title: button.title) {
                 animate(isShown: false) {
-                    self.mode.wrappedValue.dismiss()
+//                    self.mode.wrappedValue.dismiss()
                 }
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {

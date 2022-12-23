@@ -13,14 +13,11 @@ struct MitosView: View {
     // MARK: - PROPERTIES
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State var showMenu: Bool = false
-    @State var returnHome: Bool = false
     
     let info: MitosRealidades = Bundle.main.decode("mitos.json")
     
     var body: some View {
         ZStack(alignment: .top) {
-            NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
-            
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
                 
@@ -53,6 +50,17 @@ struct MitosView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }

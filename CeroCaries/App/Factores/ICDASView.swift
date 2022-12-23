@@ -24,7 +24,7 @@ struct ICDASView: View {
                 HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: false, titleSection: "")
                     .offset(y: -20)
                 
-                
+                IcdasTabView()
                 
                 Spacer()
                 
@@ -34,6 +34,17 @@ struct ICDASView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }

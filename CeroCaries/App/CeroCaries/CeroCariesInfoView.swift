@@ -36,6 +36,7 @@ struct CeroCariesInfoView: View {
                         
                         // Add text details
                         Text(info.info)
+                            .font(Font(AppFonts.regularText))
                             .padding(.horizontal)
                         
                         ImageInfoView(image: "infografia", width: widthScreen * 0.8, height: widthScreen * 0.8)
@@ -43,6 +44,7 @@ struct CeroCariesInfoView: View {
                         SeparatorView()
                         
                         Text(info.info2)
+                            .font(Font(AppFonts.regularText))
                             .padding(.horizontal)
                         
                         ImageInfoView(image: "clinicabecerra", width: widthScreen * 0.6, height: widthScreen * 0.8)
@@ -50,6 +52,7 @@ struct CeroCariesInfoView: View {
                         SeparatorView()
                         
                         Text(info.info3)
+                            .font(Font(AppFonts.regularText))
                             .padding(.horizontal)
                         
                     }
@@ -63,6 +66,17 @@ struct CeroCariesInfoView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }

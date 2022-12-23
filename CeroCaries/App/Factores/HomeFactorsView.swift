@@ -22,7 +22,7 @@ struct HomeFactorsView: View {
         ZStack(alignment: .top) {
             NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
             
-            NavigationLink(destination: PreguntasFactoresGeneralesView(factor: factores[index]), isActive: $showCategorySection) { EmptyView() }
+            NavigationLink(destination: PreguntasFactoresGeneralesView(preguntasVM: PreguntasViewModel(generales: factores[index].factores_generales.count, locales: factores[index].factores_locales.count), factor: factores[index]), isActive: $showCategorySection) { EmptyView() }
             
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
@@ -40,6 +40,17 @@ struct HomeFactorsView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }

@@ -13,12 +13,13 @@ struct MenuView: View {
     @Binding var showMenu: Bool
     @State var loadPage: Bool = false
     @State var openIns: Bool = false
+    @GestureState var offset: CGFloat = .zero
     
     var body: some View {
         ZStack {
             NavigationLink(destination: InstitutesView(), isActive: $openIns) { EmptyView() }
             
-            GeometryReader { _ in
+            HStack {
                 VStack(spacing: 25) {
                     Image("logoslidemenu")
                         .resizable()
@@ -30,13 +31,12 @@ struct MenuView: View {
                         actionSheet()
                     }) {
                         Text("compartir app".uppercased())
-                            .font(.system(size: 20))
-                            .fontWeight(.bold)
+                            .font(Font(AppFonts.menuSectionText))
                             .foregroundColor(.white)
                             .frame(width: widthScreen * 0.7, height: heightScreen * 0.08, alignment: .leading)
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal)
-                            .background(Color("BlueColor"))
+                            .background(Color("LightBlueColor"))
                     }
                 
                     MenuSectionButton(action: $openIns, sectionText: "patrocinadores y colaboradores")
@@ -52,29 +52,39 @@ struct MenuView: View {
                 .frame(width: widthScreen * 0.8)
                 .background(Color.white)
                 .opacity(showMenu ? 1 : 0)
-                .offset(x: showMenu ? 0 : -widthScreen)
-                .shadow(color: .gray, radius: 5, x: 0, y: 2)
-                .animation(.easeIn(duration: 0.6))
+                .offset(x: showMenu ? offset : -widthScreen)
+                .shadow(color: .gray, radius: 5, x: 2, y: 0)
+                .animation(.easeOut, value: showMenu)
                 .gesture(
                     DragGesture()
+                        .updating($offset, body: {
+                            value, out, _ in
+                            out = value.translation.width
+                        })
                         .onEnded { translation in
                             
-                            if translation.translation.width < -20 {
-                                withAnimation {
+                            if translation.translation.width < -(widthScreen * 0.4) {
+                                //withAnimation {
                                     showMenu = false
-                                }
+                                //}
                             }
                         }
                 )
+                
+                Spacer(minLength: widthScreen * 0.1)
             }
+            
+//            GeometryReader { _ in
+            
+//            }
         }
     }
     
     func actionSheet() {
-           guard let urlShare = URL(string: "https://apps.apple.com/mx/app/escuder%C3%ADa-telmex/id463374713") else { return }
-           let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
-           UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
-       }
+        guard let urlShare = URL(string: "https://apps.apple.com/mx/app/escuder%C3%ADa-telmex/id463374713") else { return }
+        let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
+        UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+    }
 }
 
 struct MenuView_Previews: PreviewProvider {

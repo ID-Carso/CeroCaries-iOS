@@ -13,4 +13,6 @@ struct Tip: Codable, Identifiable {
     let nombre: String
     let titulo: String
     let tip: String
+    let background: String
+    let image: String
 }

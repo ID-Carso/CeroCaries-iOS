@@ -23,7 +23,7 @@ struct CustomAlertButton: View {
           action?()
         } label: {
             Text(title)
-                .font(.system(size: 18, weight: .medium))
+                .font(Font(AppFonts.buttonTextBold))
                 .foregroundColor(.white)
                 .padding(.horizontal, 10)
         }

@@ -18,13 +18,12 @@ struct MenuSectionButton: View {
             action = true
         }) {
             Text(sectionText.uppercased())
-                .font(.system(size: 20))
-                .fontWeight(.bold)
+                .font(Font(AppFonts.menuSectionText))
                 .foregroundColor(.white)
                 .frame(width: widthScreen * 0.7, height: heightScreen * 0.08, alignment: .leading)
                 .multilineTextAlignment(.leading)
                 .padding(.horizontal)
-                .background(Color("BlueColor"))
+                .background(Color("LightBlueColor"))
         }
     }
 }

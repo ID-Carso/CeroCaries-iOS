@@ -34,11 +34,11 @@ struct CeroCariesView: View {
                     
                     SeparatorView()
                     
-                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
+                    TextPointView(textInfo: "El Programa Generación Cero es el resultado...")
                     
-                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
+                    TextPointView(textInfo: "El Programa Generación Cero es el resultado...")
                     
-                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
+                    TextPointView(textInfo: "El Programa Generación Cero es el resultado...")
                     
                     BlueActionButton(navigationAction: $showCeroCariesInfo, textButton: "Leer más", width: widthScreen * 0.6, height: heightScreen * 0.06)
                 }
@@ -51,6 +51,17 @@ struct CeroCariesView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }

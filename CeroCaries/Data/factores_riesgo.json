@@ -131,7 +131,7 @@
               "id": 6,
               "pregunta": "Tratamiento dental interceptivo o curativo (o bturaciones) en los últimos 12 meses debido a caries.",
               "info_type": 2,
-              "description": "",
+              "description": "Selladores  terapéutico, resinas, composites, cementos biocopatibles para restauración, ionomeros de vidrio, coronas metálicas, ceromeros, zirconias.",
           },
           {
               "id": 7,
@@ -149,7 +149,7 @@
               "id": 9,
               "pregunta": "Presencia de defectos estructurales del esmalte.",
               "info_type": 2,
-              "description": "",
+              "description": "Defectos congénitos y/o genéticos: Amelogenesis imperfecta, dentinogenesis imperfecta, hipomineralización molar incisivo, aislados: dientes de Turner, hutchinson grietas, moteados",
           },
           {
               "id": 10,
@@ -190,7 +190,242 @@
       ],
       "bibliografia": ["1. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "2. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "3. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "4. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "5. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "6. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "7. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "8. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "9. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "10. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157."],
       "factores_texto":"\"La Organización Mundial de la Salud (OMS) recomienda que la salud oral se integre en el marco general de prevención.\nLa salud del individuo inicia en la boca y es importante integrarla a través de los factores de riesgo para prevenir caries y\/o enfermedad periodontal, así como, otras enfermedades crónicas. La Organización Panamericana de la Salud\/Organización Mundial de la Salud (OPS\/OMS.  Infiere que \"Hay que valorar y proteger la salud bucodental antes de que ocurran los problemas\".",
-      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud."
+      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud.",
+      "cariogenicos": [
+          {
+              "id": 1,
+              "tipo": "recomendados",
+              "descripcion": "No cariogénicos",
+              "bgColor": "recommendColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Queso, yogurt natural sin azúcar, leche orgánica."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes, pescado, huevos y derivados",
+                      "alimentos": ""
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales y legumbres",
+                      "alimentos": "avena, nuez, almendra, cacahuate, soya, lentejas, frijol, garbanzo."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Verduras y hortalizas",
+                      "alimentos": "En crudo"
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Frutas",
+                      "alimentos": "Naturales, desinfectadas."
+                  },
+                  {
+                      "id": 6,
+                      "categoria": "Bebidas",
+                      "alimentos": "Agua, caldos, infusiones, jugos caseros no endulzados."
+                  },
+                  {
+                      "id": 7,
+                      "categoria": "Grasas",
+                      "alimentos": "Aceite de oliva, semillas, mantequilla orgánica vegetal."
+                  },
+              ],
+          },
+          {
+              "id": 2,
+              "tipo": "permitidos",
+              "descripcion": "Cariogénicos",
+              "bgColor": "allowedColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Yogurt de sabor, malteadas, natillas y flan."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes",
+                      "alimentos": "Jamón de pavo y semigrasas."
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales",
+                      "alimentos": "Sencillos."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Bebidas",
+                      "alimentos": "Jugos naturales con sustituto de azúcar e industrializados."
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Otros productos",
+                      "alimentos": "Mermeladas, miel de abeja, repostería sencilla, helados, mayonesa, mostaza, aderezo, frituras, salsa de tomate."
+                  },
+              ],
+          },
+          {
+              "id": 3,
+              "tipo": "limitados",
+              "descripcion": "Altamente cariogénicos",
+              "bgColor": "limitedColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Condensadas y saborizadas."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes grasas",
+                      "alimentos": "Vísceras y embutidos (salchichas)."
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales",
+                      "alimentos": "galletas rellenas, cubiertas o con soluciones azucaradas, pan, cereales industrializados."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Frutas",
+                      "alimentos": "en almíbar, secas, deshidratadas."
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Bebidas",
+                      "alimentos": "Refrescos, jugos industrializados, bebidas instanteneas en polvo."
+                  },
+                  {
+                      "id": 6,
+                      "categoria": "Grasas",
+                      "alimentos": "Manteca."
+                  },
+                  {
+                      "id": 7,
+                      "categoria": "Otros productos",
+                      "alimentos": "pastelería, repostería rellenas, golosinas y todo tipo de dulces."
+                  },
+                  {
+                      "id": 8,
+                      "categoria": "Edulcorantes",
+                      "alimentos": "Sacarosa, fructosa, jarabes (maple, nutela)."
+                  }
+              ]
+          }
+      ],
+      "cuidados_dentales": [
+          {
+              "id": 1,
+              "tratamiento": "Uso de gotas reveladoras",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 2,
+              "tratamiento": "Higiene bucal:\nCepillo dental personalizado\/hilo dental*",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 3,
+              "tratamiento": "Pasta dental fluorada.",
+              "bajo": "1100ppm",
+              "medio": "1450ppm",
+              "alto": "5000ppm",
+          },
+          {
+              "id": 4,
+              "tratamiento": "Uso de enjuague bucal fluorado (0.05%F)",
+              "bajo": "No",
+              "medio": "Si, diario",
+              "alto": "Si, diario",
+          },
+          {
+              "id": 5,
+              "tratamiento": "Uso de colutorio de clorhexidina (0.12%)",
+              "bajo": "No",
+              "medio": "No",
+              "alto": "1\/día  por  una semana, todos los meses.",
+          },
+          {
+              "id": 6,
+              "tratamiento": "Terapia de remineralización",
+              "bajo": "No",
+              "medio": "Suplemento de xilitol(8grs al día).",
+              "alto": "* Suplemento de xilitol (8grs al día).\n*Aplicación diaria de CPP-ACP.",
+          },
+          {
+              "id": 7,
+              "tratamiento": "Consejos de dieta*\nAlimentos neutralizadores",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 8,
+              "tratamiento": "Nutrición celular(suplementos alimenticios)*.",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+      ],
+      "cuidados_profesionales": [
+          {
+              "id": 1,
+              "tratamiento": "Indicación de radiografías aleta mordible.",
+              "bajo": "Si, cada 6 meses-12 meses",
+              "medio": "Si, cada 4 – 6 meses",
+              "alto": "Si, cada 3 meses",
+          },
+          {
+              "id": 2,
+              "tratamiento": "Profilaxis dental",
+              "bajo": "c/6 meses",
+              "medio": "c/4 meses",
+              "alto": "c/3 meses",
+          },
+          {
+              "id": 3,
+              "tratamiento": "Aplicación de barniz fluorado",
+              "bajo": "No",
+              "medio": "Si (22,600ppm)",
+              "alto": "Si (22,600ppm)",
+          },
+          {
+              "id": 4,
+              "tratamiento": "Programa de remineralización",
+              "bajo": "No",
+              "medio": "No",
+              "alto": "Si(FAP,TRA)",
+          },
+          {
+              "id": 5,
+              "tratamiento": "Colocación de selladores de fosas y fisuras.",
+              "bajo": "Si (opcional)",
+              "medio": "Si (obligatorio)",
+              "alto": "Si (obligatorio)",
+          },
+          {
+              "id": 6,
+              "tratamiento": "Detección de hábitos nocivos.",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 7,
+              "tratamiento": "Diagnostico oclusal, detección de maloclusiones",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+      ],
     },
     {
       "id": 2,
@@ -208,7 +443,7 @@
               "id": 2,
               "pregunta": "Consumo de alimentos cariogénicos de consistencia y textura de difícil eliminación.",
               "info_type": 2,
-              "description": "",
+              "description": "Consistencia: Viscosos y pegajosos, en polvorón y alimentos retentivos, puesto que son más difíciles de eliminar mediante el flujo salival y actividad de músculos masticadores.\nTextura: Blanda,  pues disminuye la actividad de la masticación y flujo salival.",
           },
           {
               "id": 3,
@@ -226,25 +461,25 @@
               "id": 5,
               "pregunta": "Deficiente salud familiar.",
               "info_type": 2,
-              "description": "",
+              "description": "El presentar tratamientos dentales restaurativos y perdidos de dientes debido a caries en la línea de vida del familiar o cuidador del niño se cataloga como deficiente salud bucal, así mismo, esto  impacta de manera negativa en el niño; pues los hábitos socioculturales e higiénico-dietéticos se trasmiten a las siguientes generaciones.",
           },
           {
               "id": 6,
               "pregunta": "Cuidado dental profesional poco frecuente.",
               "info_type": 2,
-              "description": "",
+              "description": "Las visitas periódicas  al odontopediatra por lo menos 2 a 3 veces por año son elementales para mantener una adecuada salud bucal y ejercer la odontología preventiva.",
           },
           {
               "id": 7,
               "pregunta": "Técnica de higiene bucal deficiente sin reforzamiento por padres o cuidador.",
               "info_type": 2,
-              "description": "",
+              "description": "Es importante resaltar que el hábito de la higiene bucal engloba varios factores; entre ellos: La frecuencia estipulada de 3 veces al día, sugerida después de cada alimento, el uso de pasta fluorada dosificada según las indicaciones de su odontopediatra, la incorporación del hilo dental  e indicaciones de enjuague bucal en caso de ser necesarios; así también, cabe resaltar que la técnica de cepillado debe de ser reforzada por padres de familia o cuidadores, ya que los niños de este grupo de edad no tiene la capacidad motriz fina para hacer un cepillado eficiente.",
           },
           {
               "id": 8,
               "pregunta": "Ingesta prolongada o permanente de medicamentos por condición médica.",
               "info_type": 2,
-              "description": "",
+              "description": "El uso de medicamentos de forma crónica en suspensión y jarabe pueden influir de manera directa; ya que son medicamentos con agentes colorantes y endulzantes.",
           },
           {
               "id": 9,
@@ -256,7 +491,7 @@
               "id": 10,
               "pregunta": "Xerostomia",
               "info_type": 2,
-              "description": "",
+              "description": "La xerostomía es un síntoma de la baja producción de saliva, percibiendo una sensación de “boca seca”.",
           },
           {
               "id": 11,
@@ -312,7 +547,7 @@
               "id": 6,
               "pregunta": "Tratamiento dental interceptivo o curativo (obturaciones) en los últimos 12 meses debido a caries.",
               "info_type": 2,
-              "description": "",
+              "description": "Selladores  terapéutico, resinas, composites, cementos biocopatibles para restauración, ionomeros de vidrio, coronas metálicas, ceromeros, zirconias.",
           },
           {
               "id": 7,
@@ -330,7 +565,7 @@
               "id": 9,
               "pregunta": "Presencia de defectos estructurales del esmalte.",
               "info_type": 2,
-              "description": "",
+              "description": "Defectos congénitos y/o genéticos: Amelogenesis imperfecta, dentinogenesis imperfecta, hipomineralización molar incisivo, aislados: dientes de Turner, hutchinson grietas, moteados",
           },
           {
               "id": 10,
@@ -371,7 +606,242 @@
       ],
       "bibliografia": ["1. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "2. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "3. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "4. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "5. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "6. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "7. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "8. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "9. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "10. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157."],
       "factores_texto": "",
-      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud."
+      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud.",
+      "cariogenicos": [
+          {
+              "id": 1,
+              "tipo": "recomendados",
+              "descripcion": "No cariogénicos",
+              "bgColor": "recommendColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Queso, yogurt natural sin azúcar, leche orgánica."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes, pescado, huevos y derivados",
+                      "alimentos": ""
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales y legumbres",
+                      "alimentos": "avena, nuez, almendra, cacahuate, soya, lentejas, frijol, garbanzo."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Verduras y hortalizas",
+                      "alimentos": "En crudo"
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Frutas",
+                      "alimentos": "Naturales, desinfectadas."
+                  },
+                  {
+                      "id": 6,
+                      "categoria": "Bebidas",
+                      "alimentos": "Agua, caldos, infusiones, jugos caseros no endulzados."
+                  },
+                  {
+                      "id": 7,
+                      "categoria": "Grasas",
+                      "alimentos": "Aceite de oliva, semillas, mantequilla orgánica vegetal."
+                  },
+              ],
+          },
+          {
+              "id": 2,
+              "tipo": "permitidos",
+              "descripcion": "Cariogénicos",
+              "bgColor": "allowedColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Yogurt de sabor, malteadas, natillas y flan."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes",
+                      "alimentos": "Jamón de pavo y semigrasas."
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales",
+                      "alimentos": "Sencillos."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Bebidas",
+                      "alimentos": "Jugos naturales con sustituto de azúcar e industrializados."
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Otros productos",
+                      "alimentos": "Mermeladas, miel de abeja, repostería sencilla, helados, mayonesa, mostaza, aderezo, frituras, salsa de tomate."
+                  },
+              ],
+          },
+          {
+              "id": 3,
+              "tipo": "limitados",
+              "descripcion": "Altamente cariogénicos",
+              "bgColor": "limitedColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Condensadas y saborizadas."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes grasas",
+                      "alimentos": "Vísceras y embutidos (salchichas)."
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales",
+                      "alimentos": "galletas rellenas, cubiertas o con soluciones azucaradas, pan, cereales industrializados."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Frutas",
+                      "alimentos": "en almíbar, secas, deshidratadas."
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Bebidas",
+                      "alimentos": "Refrescos, jugos industrializados, bebidas instantáneas en polvo."
+                  },
+                  {
+                      "id": 6,
+                      "categoria": "Grasas",
+                      "alimentos": "Manteca."
+                  },
+                  {
+                      "id": 7,
+                      "categoria": "Otros productos",
+                      "alimentos": "pastelería, repostería rellenas, golosinas y todo tipo de dulces."
+                  },
+                  {
+                      "id": 8,
+                      "categoria": "Edulcorantes",
+                      "alimentos": "Sacarosa, fructosa, jarabes (maple, nutela)."
+                  }
+              ]
+          }
+      ],
+      "cuidados_dentales": [
+          {
+              "id": 1,
+              "tratamiento": "Uso de gotas reveladoras",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 2,
+              "tratamiento": "Higiene bucal:\nCepillo dental personalizado\/hilo dental*",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 3,
+              "tratamiento": "Pasta dental fluorada.",
+              "bajo": "1450ppm",
+              "medio": "1450ppm",
+              "alto": "5000ppm",
+          },
+          {
+              "id": 4,
+              "tratamiento": "Uso de enjuague bucal fluorado (0.05%F)",
+              "bajo": "No",
+              "medio": "Si, diario",
+              "alto": "Si, diario",
+          },
+          {
+              "id": 5,
+              "tratamiento": "Uso de colutorio de clorhexidina (0.12%)",
+              "bajo": "No",
+              "medio": "No",
+              "alto": "1\/día  por  una semana, todos los meses.",
+          },
+          {
+              "id": 6,
+              "tratamiento": "Terapia de remineralización",
+              "bajo": "No",
+              "medio": "Suplemento de xilitol(8grs al día).",
+              "alto": "* Suplemento de xilitol (8grs al día).\n*Aplicación diaria de CPP-ACP.",
+          },
+          {
+              "id": 7,
+              "tratamiento": "Consejos de dieta*\nAlimentos neutralizadores",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 8,
+              "tratamiento": "Nutrición celular(suplementos alimenticios)*.",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+      ],
+      "cuidados_profesionales": [
+          {
+              "id": 1,
+              "tratamiento": "Indicación de radiografías aleta mordible.",
+              "bajo": "Si, cada 6 meses-12 meses",
+              "medio": "Si, cada 4 – 6 meses",
+              "alto": "Si, cada 3 meses",
+          },
+          {
+              "id": 2,
+              "tratamiento": "Profilaxis dental",
+              "bajo": "c/6 meses",
+              "medio": "c/4 meses",
+              "alto": "c/3 meses",
+          },
+          {
+              "id": 3,
+              "tratamiento": "Aplicación de barniz fluorado",
+              "bajo": "No",
+              "medio": "Si (22,600ppm)",
+              "alto": "Si (22,600ppm)",
+          },
+          {
+              "id": 4,
+              "tratamiento": "Programa de remineralización",
+              "bajo": "No",
+              "medio": "No",
+              "alto": "Si(FAP,TRA)",
+          },
+          {
+              "id": 5,
+              "tratamiento": "Colocación de selladores de fosas y fisuras.",
+              "bajo": "Si (opcional)",
+              "medio": "Si (obligatorio)",
+              "alto": "Si (obligatorio)",
+          },
+          {
+              "id": 6,
+              "tratamiento": "Detección de hábitos nocivos.",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 7,
+              "tratamiento": "Diagnostico oclusal, detección de maloclusiones",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+      ],
     },
     {
       "id": 3,
@@ -389,7 +859,7 @@
               "id": 2,
               "pregunta": "Consumo de alimentos cariogénicos de consistencia y textura de difícil eliminación.",
               "info_type": 2,
-              "description": "",
+              "description": "Consistencia: Viscosos y pegajosos, en polvorón y alimentos retentivos, puesto que son más difíciles de eliminar mediante el flujo salival y actividad de músculos masticadores.\nTextura: Blanda,  pues disminuye la actividad de la masticación y flujo salival.",
           },
           {
               "id": 3,
@@ -407,25 +877,25 @@
               "id": 5,
               "pregunta": "Deficiente salud familiar.",
               "info_type": 2,
-              "description": "",
+              "description": "El presentar tratamientos dentales restaurativos y perdidos de dientes debido a caries en la línea de vida del familiar o cuidador del niño se cataloga como deficiente salud bucal, así mismo, esto  impacta de manera negativa en el niño; pues los hábitos socioculturales e higiénico-dietéticos se trasmiten a las siguientes generaciones.",
           },
           {
               "id": 6,
               "pregunta": "Cuidado dental profesional poco frecuente.",
               "info_type": 2,
-              "description": "",
+              "description": "Las visitas periódicas  al odontopediatra por lo menos 2 a 3 veces por año son elementales para mantener una adecuada salud bucal y ejercer la odontología preventiva.",
           },
           {
               "id": 7,
               "pregunta": "Técnica de higiene bucal deficiente.",
               "info_type": 2,
-              "description": "",
+              "description": "Es importante resaltar que el hábito de la higiene bucal engloba varios factores; entre ellos: La frecuencia estipulada de 3 veces al día, sugerida después de cada alimento, el uso de pasta fluorada dosificada según las indicaciones de su odontopediatra, la incorporación del hilo dental  e indicaciones de enjuague bucal en caso de ser necesarios.",
           },
           {
               "id": 8,
               "pregunta": "Ingesta prolongada o permanente de medicamentos por condición médica.",
               "info_type": 2,
-              "description": "",
+              "description": "El uso de medicamentos de forma crónica en suspensión y jarabe pueden influir de manera directa; ya que son medicamentos con agentes colorantes y endulzantes.",
           },
           {
               "id": 9,
@@ -437,7 +907,7 @@
               "id": 10,
               "pregunta": "Xerostomia",
               "info_type": 2,
-              "description": "",
+              "description": "La xerostomía es un síntoma de la baja producción de saliva, percibiendo una sensación de “boca seca”.",
           },
           {
               "id": 11,
@@ -505,7 +975,7 @@
               "id": 6,
               "pregunta": "Tratamiento dental interceptivo o curativo (obturaciones) en los últimos 12 meses debido a caries.",
               "info_type": 2,
-              "description": "",
+              "description": "Selladores  terapéutico, resinas, composites, cementos biocopatibles para restauración, ionomeros de vidrio, coronas metálicas, ceromeros, zirconias.",
           },
           {
               "id": 7,
@@ -523,7 +993,7 @@
               "id": 9,
               "pregunta": "Presencia de defectos estructurales del esmalte.",
               "info_type": 2,
-              "description": "",
+              "description": "Defectos congénitos y/o genéticos: Amelogenesis imperfecta, dentinogenesis imperfecta, hipomineralización molar incisivo, aislados: dientes de Turner, hutchinson grietas, moteados",
           },
           {
               "id": 10,
@@ -570,7 +1040,242 @@
       ],
       "bibliografia": ["1. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "2. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "3. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "4. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "5. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "6. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "7. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "8. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "9. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "10. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157."],
       "factores_texto": "",
-      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud."
+      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud.",
+      "cariogenicos": [
+          {
+              "id": 1,
+              "tipo": "recomendados",
+              "descripcion": "No cariogénicos",
+              "bgColor": "recommendColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Queso, yogurt natural sin azúcar, leche orgánica."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes, pescado, huevos y derivados",
+                      "alimentos": ""
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales y legumbres",
+                      "alimentos": "avena, nuez, almendra, cacahuate, soya, lentejas, frijol, garbanzo."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Verduras y hortalizas",
+                      "alimentos": "En crudo"
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Frutas",
+                      "alimentos": "Naturales, desinfectadas."
+                  },
+                  {
+                      "id": 6,
+                      "categoria": "Bebidas",
+                      "alimentos": "Agua, caldos, infusiones, jugos caseros no endulzados."
+                  },
+                  {
+                      "id": 7,
+                      "categoria": "Grasas",
+                      "alimentos": "Aceite de oliva, semillas, mantequilla orgánica vegetal."
+                  },
+              ],
+          },
+          {
+              "id": 2,
+              "tipo": "permitidos",
+              "descripcion": "Cariogénicos",
+              "bgColor": "allowedColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Yogurt de sabor, malteadas, natillas y flan."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes",
+                      "alimentos": "Jamón de pavo y semigrasas."
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales",
+                      "alimentos": "Sencillos."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Bebidas",
+                      "alimentos": "Jugos naturales con sustituto de azúcar e industrializados."
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Otros productos",
+                      "alimentos": "Mermeladas, miel de abeja, repostería sencilla, helados, mayonesa, mostaza, aderezo, frituras, salsa de tomate."
+                  },
+              ],
+          },
+          {
+              "id": 3,
+              "tipo": "limitados",
+              "descripcion": "Altamente cariogénicos",
+              "bgColor": "limitedColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Condensadas y saborizadas."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes grasas",
+                      "alimentos": "Vísceras y embutidos (salchichas)."
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales",
+                      "alimentos": "galletas rellenas, cubiertas o con soluciones azucaradas, pan, cereales industrializados."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Frutas",
+                      "alimentos": "en almíbar, secas, deshidratadas."
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Bebidas",
+                      "alimentos": "Refrescos, jugos industrializados, bebidas instantáneas en polvo."
+                  },
+                  {
+                      "id": 6,
+                      "categoria": "Grasas",
+                      "alimentos": "Manteca."
+                  },
+                  {
+                      "id": 7,
+                      "categoria": "Otros productos",
+                      "alimentos": "pastelería, repostería rellenas, golosinas y todo tipo de dulces."
+                  },
+                  {
+                      "id": 8,
+                      "categoria": "Edulcorantes",
+                      "alimentos": "Sacarosa, fructosa, jarabes (maple, nutela)."
+                  }
+              ]
+          }
+      ],
+      "cuidados_dentales": [
+          {
+              "id": 1,
+              "tratamiento": "Uso de gotas reveladoras",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 2,
+              "tratamiento": "Higiene bucal:\nCepillo dental personalizado\/hilo dental*",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 3,
+              "tratamiento": "Pasta dental fluorada.",
+              "bajo": "1450ppm",
+              "medio": "1450ppm",
+              "alto": "5000ppm",
+          },
+          {
+              "id": 4,
+              "tratamiento": "Uso de enjuague bucal fluorado (0.05%F)",
+              "bajo": "No",
+              "medio": "Si, diario",
+              "alto": "Si, diario",
+          },
+          {
+              "id": 5,
+              "tratamiento": "Uso de colutorio de clorhexidina (0.12%)",
+              "bajo": "No",
+              "medio": "Si",
+              "alto": "1\/día  por  una semana, todos los meses.",
+          },
+          {
+              "id": 6,
+              "tratamiento": "Terapia de remineralización",
+              "bajo": "No",
+              "medio": "Suplemento de xilitol(8grs al día).",
+              "alto": "* Suplemento de xilitol (8grs al día).\n*Aplicación diaria de CPP-ACP.",
+          },
+          {
+              "id": 7,
+              "tratamiento": "Consejos de dieta*\nAlimentos neutralizadores",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 8,
+              "tratamiento": "Nutrición celular(suplementos alimenticios)*.",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+      ],
+      "cuidados_profesionales": [
+          {
+              "id": 1,
+              "tratamiento": "Indicación de radiografías aleta mordible.",
+              "bajo": "Si, cada 6 meses-12 meses",
+              "medio": "Si, cada 4 – 6 meses",
+              "alto": "Si, cada 3 meses",
+          },
+          {
+              "id": 2,
+              "tratamiento": "Profilaxis dental",
+              "bajo": "c/6 meses",
+              "medio": "c/4 meses",
+              "alto": "c/3 meses",
+          },
+          {
+              "id": 3,
+              "tratamiento": "Aplicación de barniz fluorado",
+              "bajo": "No",
+              "medio": "Si (22,600ppm)",
+              "alto": "Si (22,600ppm)",
+          },
+          {
+              "id": 4,
+              "tratamiento": "Programa de remineralización",
+              "bajo": "No",
+              "medio": "No",
+              "alto": "Si(FAP,TRA)",
+          },
+          {
+              "id": 5,
+              "tratamiento": "Colocación de selladores de fosas y fisuras.",
+              "bajo": "Si (opcional)",
+              "medio": "Si (obligatorio)",
+              "alto": "Si (obligatorio)",
+          },
+          {
+              "id": 6,
+              "tratamiento": "Detección de hábitos nocivos.",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 7,
+              "tratamiento": "Diagnostico oclusal, detección de maloclusiones",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+      ],
     },
     {
       "id": 4,
@@ -588,7 +1293,7 @@
               "id": 2,
               "pregunta": "Consumo de alimentos cariogénicos de consistencia y textura de difícil eliminación.",
               "info_type": 2,
-              "description": "",
+              "description": "Consistencia: Viscosos y pegajosos, en polvorón y alimentos retentivos, puesto que son más difíciles de eliminar mediante el flujo salival y actividad de músculos masticadores.\nTextura: Blanda,  pues disminuye la actividad de la masticación y flujo salival.",
           },
           {
               "id": 3,
@@ -612,19 +1317,19 @@
               "id": 6,
               "pregunta": "Cuidado dental profesional poco frecuente.",
               "info_type": 2,
-              "description": "",
+              "description": "Las visitas periódicas  al odontopediatra por lo menos 2 a 3 veces por año son elementales para mantener una adecuada salud bucal y ejercer la odontología preventiva.",
           },
           {
               "id": 7,
               "pregunta": "Técnica de higiene bucal deficiente.",
               "info_type": 2,
-              "description": "",
+              "description": "Es importante resaltar que el hábito de la higiene bucal engloba varios factores; entre ellos: La frecuencia estipulada de 3 veces al día, sugerida después de cada alimento, el uso de pasta fluorada dosificada según las indicaciones de su odontopediatra, la incorporación del hilo dental  e indicaciones de enjuague bucal en caso de ser necesarios.",
           },
           {
               "id": 8,
               "pregunta": "Ingesta prolongada o permanente de medicamentos por condición médica.",
               "info_type": 2,
-              "description": "",
+              "description": "El uso de medicamentos de forma crónica en suspensión y jarabe pueden influir de manera directa; ya que son medicamentos con agentes colorantes y endulzantes.",
           },
           {
               "id": 9,
@@ -636,7 +1341,7 @@
               "id": 10,
               "pregunta": "Calidad y cantidad salival. Xerostomia",
               "info_type": 2,
-              "description": "",
+              "description": "La xerostomía es un síntoma de la baja producción de saliva, percibiendo una sensación de “boca seca”.",
           },
           {
               "id": 11,
@@ -704,7 +1409,7 @@
               "id": 6,
               "pregunta": "Tratamiento dental curativo (obturaciones, prótesis dental, coronas) en los últimos 12 meses debido a caries.",
               "info_type": 2,
-              "description": "",
+              "description": "Selladores  terapéutico, resinas, composites, cementos biocopatibles para restauración, ionomeros de vidrio, coronas metálicas, ceromeros, zirconias. ",
           },
           {
               "id": 7,
@@ -722,7 +1427,7 @@
               "id": 9,
               "pregunta": "Presencia de defectos estructurales del esmalte.",
               "info_type": 2,
-              "description": "",
+              "description": "Defectos congénitos y/o genéticos: Amelogenesis imperfecta, dentinogenesis imperfecta, hipomineralización molar incisivo, aislados: dientes de Turner, hutchinson grietas, moteados",
           },
           {
               "id": 10,
@@ -769,6 +1474,241 @@
       ],
       "bibliografia": ["1. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "2. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "3. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "4. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "5. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "6. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "7. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "8. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "9. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157.", "10. American Academy of Pediatric Dentistry. (2013). Guideline on caries-risk assessment and management for infants, children, and adolescents. Pediatric dentistry, 35(5), E157."],
       "factores_texto": "",
-      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud."
+      "definicion": "Los factores de riesgo son un conjunto de hábitos generalmente no favorables socioculturales, dietéticos e higiénicos  que conllevan a la  probabilidad que un individuo o un grupo de ellos puedan sufrir un determinado daño en su salud.",
+      "cariogenicos": [
+          {
+              "id": 1,
+              "tipo": "recomendados",
+              "descripcion": "No cariogénicos",
+              "bgColor": "recommendColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Queso, yogurt natural sin azúcar, leche orgánica."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes, pescado, huevos y derivados",
+                      "alimentos": ""
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales y legumbres",
+                      "alimentos": "avena, nuez, almendra, cacahuate, soya, lentejas, frijol, garbanzo."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Verduras y hortalizas",
+                      "alimentos": "En crudo"
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Frutas",
+                      "alimentos": "Naturales, desinfectadas."
+                  },
+                  {
+                      "id": 6,
+                      "categoria": "Bebidas",
+                      "alimentos": "Agua, caldos, infusiones, jugos caseros no endulzados."
+                  },
+                  {
+                      "id": 7,
+                      "categoria": "Grasas",
+                      "alimentos": "Aceite de oliva, semillas, mantequilla orgánica vegetal."
+                  },
+              ],
+          },
+          {
+              "id": 2,
+              "tipo": "permitidos",
+              "descripcion": "Cariogénicos",
+              "bgColor": "allowedColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Yogurt de sabor, malteadas, natillas y flan."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes",
+                      "alimentos": "Jamón de pavo y semigrasas."
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales",
+                      "alimentos": "Sencillos."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Bebidas",
+                      "alimentos": "Jugos naturales con sustituto de azúcar e industrializados."
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Otros productos",
+                      "alimentos": "Mermeladas, miel de abeja, repostería sencilla, helados, mayonesa, mostaza, aderezo, frituras, salsa de tomate."
+                  },
+              ],
+          },
+          {
+              "id": 3,
+              "tipo": "limitados",
+              "descripcion": "Altamente cariogénicos",
+              "bgColor": "limitedColor",
+              "info": [
+                  {
+                      "id": 1,
+                      "categoria": "Leche y lácteos",
+                      "alimentos": "Condensadas y saborizadas."
+                  },
+                  {
+                      "id": 2,
+                      "categoria": "Carnes grasas",
+                      "alimentos": "Vísceras y embutidos (salchichas)."
+                  },
+                  {
+                      "id": 3,
+                      "categoria": "Cereales",
+                      "alimentos": "galletas rellenas, cubiertas o con soluciones azucaradas, pan, cereales industrializados."
+                  },
+                  {
+                      "id": 4,
+                      "categoria": "Frutas",
+                      "alimentos": "en almíbar, secas, deshidratadas."
+                  },
+                  {
+                      "id": 5,
+                      "categoria": "Bebidas",
+                      "alimentos": "Refrescos, jugos industrializados, bebidas instantáneas en polvo."
+                  },
+                  {
+                      "id": 6,
+                      "categoria": "Grasas",
+                      "alimentos": "Manteca."
+                  },
+                  {
+                      "id": 7,
+                      "categoria": "Otros productos",
+                      "alimentos": "pastelería, repostería rellenas, golosinas y todo tipo de dulces."
+                  },
+                  {
+                      "id": 8,
+                      "categoria": "Edulcorantes",
+                      "alimentos": "Sacarosa, fructosa, jarabes (maple, nutela)."
+                  }
+              ]
+          }
+      ],
+      "cuidados_dentales": [
+          {
+              "id": 1,
+              "tratamiento": "Uso de gotas reveladoras",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 2,
+              "tratamiento": "Higiene bucal:\nCepillo dental personalizado\/hilo dental*",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 3,
+              "tratamiento": "Pasta dental fluorada.",
+              "bajo": "1450ppm",
+              "medio": "1450ppm",
+              "alto": "5000ppm",
+          },
+          {
+              "id": 4,
+              "tratamiento": "Uso de enjuague bucal fluorado (0.05%F)",
+              "bajo": "No",
+              "medio": "Si, diario",
+              "alto": "Si, diario",
+          },
+          {
+              "id": 5,
+              "tratamiento": "Uso de colutorio de clorhexidina (0.12%)",
+              "bajo": "No",
+              "medio": "Si",
+              "alto": "1\/día  por  una semana, todos los meses.",
+          },
+          {
+              "id": 6,
+              "tratamiento": "Terapia de remineralización",
+              "bajo": "No",
+              "medio": "Suplemento de xilitol(8grs al día).",
+              "alto": "* Suplemento de xilitol (8grs al día).\n*Aplicación diaria de CPP-ACP.",
+          },
+          {
+              "id": 7,
+              "tratamiento": "Consejos de dieta*\nAlimentos neutralizadores",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 8,
+              "tratamiento": "Nutrición celular(suplementos alimenticios)*.",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+      ],
+      "cuidados_profesionales": [
+          {
+              "id": 1,
+              "tratamiento": "Indicación de radiografías aleta mordible.",
+              "bajo": "Si, cada 6 meses-12 meses",
+              "medio": "Si, cada 4 – 6 meses",
+              "alto": "Si, cada 3 meses",
+          },
+          {
+              "id": 2,
+              "tratamiento": "Profilaxis dental",
+              "bajo": "c/6 meses",
+              "medio": "c/4 meses",
+              "alto": "c/3 meses",
+          },
+          {
+              "id": 3,
+              "tratamiento": "Aplicación de barniz fluorado",
+              "bajo": "No",
+              "medio": "Si (22,600ppm)",
+              "alto": "Si (22,600ppm)",
+          },
+          {
+              "id": 4,
+              "tratamiento": "Programa de remineralización",
+              "bajo": "No",
+              "medio": "No",
+              "alto": "Si(FAP,TRA)",
+          },
+          {
+              "id": 5,
+              "tratamiento": "Colocación de selladores de fosas y fisuras.",
+              "bajo": "Si (opcional)",
+              "medio": "Si (obligatorio)",
+              "alto": "Si (obligatorio)",
+          },
+          {
+              "id": 6,
+              "tratamiento": "Detección de hábitos nocivos.",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+          {
+              "id": 7,
+              "tratamiento": "Diagnostico oclusal, detección de maloclusiones",
+              "bajo": "Si",
+              "medio": "Si",
+              "alto": "Si",
+          },
+      ],
     }
 ]

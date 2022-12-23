@@ -25,7 +25,7 @@ struct SectionHomeButtonView: View {
                     .frame(width: heightScreen * 0.04, height: heightScreen * 0.04)
                 
                 Text(sectionText.uppercased())
-                    .fontWeight(.bold)
+                    .font(Font(AppFonts.buttonTextBold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
                     .frame(width: widthScreen * 0.6)

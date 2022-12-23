@@ -10,20 +10,18 @@ import SwiftUI
 
 struct OdontologiaView: View {
     
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State var showMenu: Bool = false
-    @State var returnHome: Bool = false
     @State var showOdontologiaInfo: Bool = false
     
     var body: some View {
         ZStack(alignment: .top) {
-            NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
-            
             NavigationLink(destination: ShowMoreOdontologiaView(), isActive: $showOdontologiaInfo) { EmptyView() }
             
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
                 
-                HeaderSectionView(dismissAction: { returnHome = true }, showImage: true, titleSection: "Odontología de la salud")
+                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: true, titleSection: "Odontología de la salud")
                     .offset(y: -20)
                 
                 VStack(spacing: 20) {
@@ -33,11 +31,11 @@ struct OdontologiaView: View {
                     
                     SeparatorView()
                     
-                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
+                    TextPointView(textInfo: "El Programa Generación Cero es el resultado...")
                     
-                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
+                    TextPointView(textInfo: "El Programa Generación Cero es el resultado...")
                     
-                    TextPointView(textInfo: "El programa Generación Cero es el resultado...")
+                    TextPointView(textInfo: "El Programa Generación Cero es el resultado...")
                     
                     BlueActionButton(navigationAction: $showOdontologiaInfo, textButton: "Leer más", width: widthScreen * 0.6, height: heightScreen * 0.06)
                 }
@@ -50,6 +48,17 @@ struct OdontologiaView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }

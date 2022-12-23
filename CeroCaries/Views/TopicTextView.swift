@@ -17,13 +17,11 @@ struct TopicTextView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(title.uppercased())
-                .font(.system(size: 18))
-                .fontWeight(.bold)
+                .font(Font(AppFonts.buttonTextBold))
                 .foregroundColor(Color(bgColor))
             
             Text(text)
-                .font(.system(size: 16))
-                .fontWeight(.bold)
+                .font(Font(AppFonts.regularBoldText))
                 .multilineTextAlignment(.leading)
                 .foregroundColor(Color(bgColor))
                 .frame(width: widthScreen * 0.8)

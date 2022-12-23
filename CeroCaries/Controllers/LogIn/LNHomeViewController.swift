@@ -9,11 +9,7 @@
 import UIKit
 import SwiftUI
 
-class LNHomeViewController: BaseViewController {
-    
-    @IBOutlet weak var logInBtn: UIButton!
-    @IBOutlet weak var createAccountBtn: UIButton!
-    @IBOutlet weak var withOutRegisterBtn: UIButton!
+class LNHomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +23,6 @@ class LNHomeViewController: BaseViewController {
     }
     
     func viewStyle(){
-        logInBtn.layer.cornerRadius = 10
-        createAccountBtn.layer.cornerRadius = 10
-        withOutRegisterBtn.layer.cornerRadius = 10
 
         let root = HomeView()
         

@@ -16,8 +16,7 @@ struct PreguntasHeaderView: View {
     var body: some View {
         HStack(spacing: 10) {
             Text(typeQuestions.uppercased())
-                .font(.system(size: 16))
-                .fontWeight(.bold)
+                .font(Font(AppFonts.regularBoldText))
                 .foregroundColor(Color("LightBlueColor"))
             
             Image("verticalbar")
@@ -25,8 +24,7 @@ struct PreguntasHeaderView: View {
                 .scaledToFit()
             
             Text(factorCategory.uppercased())
-                .font(.system(size: 16))
-                .fontWeight(.semibold)
+                .font(Font(AppFonts.regularBoldText))
                 .foregroundColor(.gray)
         }
         .frame(height: heightScreen * 0.03)

@@ -11,19 +11,17 @@ import SwiftUI
 struct ShowMoreOdontologiaView: View {
     
     // MARK: - PROPERTIES
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State var showMenu: Bool = false
-    @State var returnHome: Bool = false
     
     let info: Odontologia = Bundle.main.decode("odontologia.json")
     
     var body: some View {
         ZStack(alignment: .top) {
-            NavigationLink(destination: OdontologiaView(), isActive: $returnHome) { EmptyView() }
-            
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
                 
-                HeaderSectionView(dismissAction: { returnHome = true }, showImage: true, titleSection: "Odontología de la salud")
+                HeaderSectionView(dismissAction: { self.presentationMode.wrappedValue.dismiss() }, showImage: true, titleSection: "Odontología de la salud")
                     .offset(y: -20)
                 
                 ScrollView(.vertical, showsIndicators: false) {
@@ -36,6 +34,7 @@ struct ShowMoreOdontologiaView: View {
                         
                         // Add text details
                         Text(info.odontologia)
+                            .font(Font(AppFonts.regularText))
                             .padding(.horizontal)
                         
                     }
@@ -49,6 +48,17 @@ struct ShowMoreOdontologiaView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }

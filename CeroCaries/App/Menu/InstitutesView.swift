@@ -40,6 +40,25 @@ struct InstitutesView: View {
                 
                 Spacer()
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
+            
+            MenuView(showMenu: $showMenu)
+        } //: ZTACK
+        .background(Color.white)
+        .navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarHidden(true)
+        .onDisappear {
+            showMenu = false
         }
     }
 }

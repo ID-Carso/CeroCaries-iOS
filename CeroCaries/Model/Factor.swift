@@ -18,4 +18,7 @@ struct FactorRiesgo: Codable, Identifiable {
     let bibliografia: [String]
     let factores_texto: String
     let definicion: String
+    let cariogenicos: [Cariogenico]
+    let cuidados_dentales: [CuidadoDental]
+    let cuidados_profesionales: [CuidadoDental]
 }

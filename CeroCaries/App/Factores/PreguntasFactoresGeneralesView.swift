@@ -11,6 +11,7 @@ import SwiftUI
 struct PreguntasFactoresGeneralesView: View {
     
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    @ObservedObject var preguntasVM: PreguntasViewModel
     @State var showMenu: Bool = false
     @State var returnHome: Bool = false
     @State var showLocales: Bool = false
@@ -25,9 +26,9 @@ struct PreguntasFactoresGeneralesView: View {
         ZStack(alignment: .top) {
             NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
             
-            NavigationLink(destination: PreguntasLocalesView(factor: factor), isActive: $showLocales) { EmptyView() }
+            NavigationLink(destination: PreguntasLocalesView(preguntasVM: preguntasVM, factor: factor), isActive: $showLocales) { EmptyView() }
             
-            NavigationLink(destination: CariogenicosView(), isActive: $showCariogenicos) { EmptyView() }
+            NavigationLink(destination: CariogenicosView(alimentos: factor.cariogenicos), isActive: $showCariogenicos) { EmptyView() }
             
             NavigationLink(destination: ICDASView(), isActive: $showICDAS) { EmptyView() }
             
@@ -42,82 +43,35 @@ struct PreguntasFactoresGeneralesView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 20) {
                         ForEach(factor.factores_generales) { pregunta in
-                            VStack {
-                                HStack(alignment: .top) {
-                                    Text("\(pregunta.id)")
-                                        .font(.system(size: 16))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.white)
-                                        .frame(width: 20, height: 20)
-                                        .background(Color("LightBlueColor"))
-                                        .clipShape(Circle())
-                                    
-                                    Text(pregunta.pregunta)
-                                        .font(.system(size: 16))
-                                        .fontWeight(.semibold)
-                                        .multilineTextAlignment(.leading)
-                                    
-                                    Spacer()
+                            QuestionView(showCariogenicos: $showCariogenicos, descriptionAlert: $descriptionAlert, showAlert: $showAlert, showICDAS: $showICDAS, pregunta: pregunta, yesAction: {
+                                preguntasVM.cuidadosGenerales[pregunta.id - 1] = 2
+                                print(preguntasVM.cuidadosGenerales)
+                                }, noAction: {
+                                    preguntasVM.cuidadosGenerales[pregunta.id - 1] = 1
+                                    print(preguntasVM.cuidadosGenerales)
                                 }
-                                
-                                if pregunta.info_type > 0 {
-                                    Button(action: {
-                                        switch pregunta.info_type {
-                                        case 1:
-                                            showCariogenicos = true
-                                        case 2:
-                                            descriptionAlert = pregunta.description
-                                            showAlert = true
-                                        case 3:
-                                            showICDAS = true
-                                        default:
-                                            break
-                                        }
-                                    }) {
-                                        Text("leer más")
-                                            .foregroundColor(.white)
-                                            .frame(width: widthScreen * 0.25, height: heightScreen * 0.03)
-                                            .background(Color("OrangeButtonColor"))
-                                            .clipShape(
-                                                RoundedRectangle(cornerRadius: 15)
-                                            )
-                                    }
-                                }
-                                
-                                HStack(spacing: 40) {
-                                    Button(action: {
-                                        
-                                    }) {
-                                        Text("Sí")
-                                            .font(.system(size: 16))
-                                            .fontWeight(.bold)
-                                            .foregroundColor(.black)
-                                            .frame(width: 30, height: 30)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 15).stroke(Color.black, lineWidth: 2)
-                                            )
-                                    }
-                                    
-                                    Button(action: {
-                                        
-                                    }) {
-                                        Text("No")
-                                            .font(.system(size: 16))
-                                            .fontWeight(.bold)
-                                            .foregroundColor(.black)
-                                            .frame(width: 30, height: 30)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 15).stroke(Color.black, lineWidth: 2)
-                                            )
-                                    }
-                                }
-                                .padding(.vertical, 20)
-                                
-                                SeparatorView()
-                            }
+                            )
                         }
                         
-                        BlueActionButton(navigationAction: $showLocales, textButton: "Siguiente", width: widthScreen * 0.6, height: heightScreen * 0.06)
+                        Button(action: {
+                            if preguntasVM.checkAnswersGenerales() {
+                                showLocales = true
+                            } else {
+                                descriptionAlert = "Para continuar debes responder todas las preguntas."
+                                showAlert = true
+                            }
+                        }) {
+                            Text("Siguiente")
+                                .font(Font(AppFonts.secondaryActionButtonText))
+                                .foregroundColor(.white)
+                                .frame(width: widthScreen * 0.6, height: heightScreen * 0.06)
+                                .background(Color("LightBlueColor"))
+                                .cornerRadius(15)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 15, style: .continuous)
+                                )
+                        }
+                        
                     }
                     .padding(.horizontal, 20)
                     .padding(.top, 20)
@@ -131,6 +85,17 @@ struct PreguntasFactoresGeneralesView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
             
@@ -151,6 +116,6 @@ struct PreguntasFactoresGeneralesView_Previews: PreviewProvider {
     static let factores: [FactorRiesgo] = Bundle.main.decode("factores_riesgo.json")
     
     static var previews: some View {
-        PreguntasFactoresGeneralesView(factor: factores[0])
+        PreguntasFactoresGeneralesView(preguntasVM: PreguntasViewModel(generales: factores[0].factores_generales.count, locales: factores[0].factores_locales.count), factor: factores[0])
     }
 }

@@ -19,8 +19,7 @@ struct TextPointView: View {
                 .foregroundColor(Color("LightBlueColor"))
                 .frame(width: 20, height: 20)
             Text(textInfo)
-                .font(.system(size: 18))
-                .fontWeight(.semibold)
+                .font(Font(AppFonts.buttonTextBold))
         }
     }
 }

@@ -16,14 +16,16 @@ struct FactoresRiesgoView: View {
     @State var showCuidadosCasa: Bool = false
     @State var showCuidadosConsultorio: Bool = false
     
-    let factoresText: String
-    let definicion: String
+    let factor: FactorRiesgo
+    let riesgo: String
     
     var body: some View {
         ZStack(alignment: .top) {
             NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
             
+            NavigationLink(destination: CuidadosDentalesView(titleSection: "Cuidados dentales en casa", cuidados: factor.cuidados_dentales, bibliografia: factor.bibliografia, riesgo: riesgo), isActive: $showCuidadosCasa) { EmptyView() }
             
+            NavigationLink(destination: CuidadosDentalesView(titleSection: "Cuidados dentales profesionales en consultorio", cuidados: factor.cuidados_profesionales, bibliografia: factor.bibliografia, riesgo: riesgo), isActive: $showCuidadosConsultorio) { EmptyView() }
             
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
@@ -33,22 +35,22 @@ struct FactoresRiesgoView: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 20) {
-                        Text(factoresText)
-                            .font(.system(size: 16))
+                        Text(factor.factores_texto)
+                            .font(Font(AppFonts.regularText))
                             .multilineTextAlignment(.leading)
                         .padding(.horizontal)
                         
                         HStack {
                             Text("Definición:")
-                                .fontWeight(.bold)
+                                .font(Font(AppFonts.buttonTextBold))
                                 .multilineTextAlignment(.leading)
                             
                             Spacer()
                         }
                         .padding(.horizontal)
                         
-                        Text(definicion)
-                            .font(.system(size: 16))
+                        Text(factor.definicion)
+                            .font(Font(AppFonts.regularText))
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal)
                             .padding(.bottom, 20)
@@ -68,6 +70,17 @@ struct FactoresRiesgoView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }
@@ -84,6 +97,6 @@ struct FactoresRiesgoView_Previews: PreviewProvider {
     static let factores: [FactorRiesgo] = Bundle.main.decode("factores_riesgo.json")
     
     static var previews: some View {
-        FactoresRiesgoView(factoresText: factores[0].factores_texto, definicion: factores[0].definicion)
+        FactoresRiesgoView(factor: factores[0], riesgo: "Alto")
     }
 }

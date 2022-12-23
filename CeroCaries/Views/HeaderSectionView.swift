@@ -23,10 +23,11 @@ struct HeaderSectionView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 40, height: 40)
-                    .foregroundColor(Color("TopBarColor"))
+                    .foregroundColor(.white)
                     .background(Color("LightBlueColor"))
                     .clipShape(Circle())
                     .padding(.horizontal, 20)
+                    .shadow(color: .gray, radius: 5, x: 2, y: 2)
             }
             
             VStack(alignment: .center) {
@@ -38,7 +39,7 @@ struct HeaderSectionView: View {
                 }
                 
                 Text(titleSection.uppercased())
-                    .font(.system(size: 20))
+                    .font(Font(AppFonts.headerSectionTitle))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                     .frame(width: showImage ? widthScreen * 0.8 : widthScreen * 0.6)

@@ -32,7 +32,7 @@ struct BibliografiaView: View {
                     VStack(spacing: 20) {
                         ForEach(refs, id: \.self) { ref in
                             Text(ref)
-                                .font(.system(size: 16))
+                                .font(Font(AppFonts.regularText))
                                 .multilineTextAlignment(.leading)
                                 .padding(.horizontal)
                         }
@@ -47,6 +47,17 @@ struct BibliografiaView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }

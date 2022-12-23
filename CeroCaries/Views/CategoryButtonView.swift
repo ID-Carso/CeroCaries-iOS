@@ -15,12 +15,11 @@ struct CategoryButtonView: View {
     var body: some View {
         VStack {
             Text(title.uppercased())
-                .font(.system(size: 24))
-                .fontWeight(.bold)
+                .font(Font(AppFonts.categoryButtonTextBold))
             .foregroundColor(.white)
             
             Text("años".uppercased())
-                .font(.system(size: 16))
+                .font(Font(AppFonts.regularText))
                 .foregroundColor(.white)
         }
         .frame(width: widthScreen * 0.3, height: widthScreen * 0.3)

@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "tabTitle": "ICDAS Completo",
+    "info": [
+      {
+        "id": 1,
+        "arrow": "shortgreenarrow",
+        "type": "0",
+        "image": [
+          "calendario"
+        ]
+      },
+      {
+        "id": 2,
+        "arrow": "shortyellowarrow",
+        "type": "1",
+        "image": [
+          "calendario"
+        ]
+      },
+      {
+        "id": 3,
+        "arrow": "shortyellowarrow",
+        "type": "2",
+        "image": [
+          "calendario"
+        ]
+      },
+      {
+        "id": 4,
+        "arrow": "shortredarrow",
+        "type": "3",
+        "image": [
+          "calendario"
+        ]
+      },
+      {
+        "id": 5,
+        "arrow": "shortredarrow",
+        "type": "4",
+        "image": [
+          "calendario"
+        ]
+      },
+      {
+        "id": 6,
+        "arrow": "shortredarrow",
+        "type": "5",
+        "image": [
+          "calendario"
+        ]
+      },
+      {
+        "id": 7,
+        "arrow": "shortredarrow",
+        "type": "6",
+        "image": [
+          "calendario"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "tabTitle": "ICDAS Combinado",
+    "info": [
+      {
+        "id": 1,
+        "arrow": "shortgreenarrow",
+        "type": "0",
+        "image": [
+          "calendario"
+        ]
+      },
+      {
+        "id": 2,
+        "arrow": "largeyellowarrow",
+        "type": "A",
+        "image": [
+          "calendario",
+          "calendario"
+        ]
+      },
+      {
+        "id": 3,
+        "arrow": "largeredarrow",
+        "type": "B",
+        "image": [
+          "calendario",
+          "calendario"
+        ]
+      },
+      {
+        "id": 4,
+        "arrow": "largeredarrow",
+        "type": "C",
+        "image": [
+          "calendario",
+          "calendario"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "tabTitle": "SIGEHOS",
+    "info": [
+      {
+        "id": 1,
+        "arrow": "shortgreenarrow",
+        "type": "SANO",
+        "image": [
+          "calendario"
+        ]
+      },
+      {
+        "id": 2,
+        "arrow": "largeyellowarrow",
+        "type": "MB / SP",
+        "image": [
+          "calendario",
+          "calendario"
+        ]
+      },
+      {
+        "id": 3,
+        "arrow": "largeredarrow",
+        "type": "NP",
+        "image": [
+          "calendario",
+          "calendario"
+        ]
+      },
+      {
+        "id": 4,
+        "arrow": "largeredarrow",
+        "type": "P",
+        "image": [
+          "calendario",
+          "calendario"
+        ]
+      }
+    ]
+  }
+]

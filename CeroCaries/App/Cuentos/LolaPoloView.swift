@@ -15,6 +15,9 @@ struct LolaPoloView: View {
     @State var returnHome: Bool = false
     @State var showReinoGolosinas: Bool = false
     @State var showBatallaSucia: Bool = false
+    @State var index: Int = 0
+    
+    let cuentos: [Cuento] = Bundle.main.decode("cuentos.json")
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -23,6 +26,8 @@ struct LolaPoloView: View {
                 .frame(width: widthScreen)
             
             NavigationLink(destination: HomeView(), isActive: $returnHome) { EmptyView() }
+            
+            NavigationLink(destination: CuentoView(cuento: cuentos[index]), isActive: $showReinoGolosinas) { EmptyView() }
             
             VStack(spacing: 0) {
                 AppBarView(showMenu: $showMenu)
@@ -35,30 +40,39 @@ struct LolaPoloView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 40, height: 40)
-                            .foregroundColor(Color("TopBarColor"))
+                            .foregroundColor(.white)
                             .background(Color("LightBlueColor"))
                             .clipShape(Circle())
-                        .padding(.horizontal, 20)
+                            .shadow(color: Color.gray, radius: 5, x: 2, y: 2)
+                            .padding(.horizontal, 20)
                         
                         Spacer()
                     }
                 }
                 
                 Text("Acompaña a Lola\ny Polo en sus aventuras")
-                    .font(.system(size: 16))
-                    .fontWeight(.bold)
+                    .font(Font(AppFonts.blackTitle))
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color("BlueColor"))
                 
                 Text("Selecciona una historia")
-                    .font(.system(size: 16))
-                    .fontWeight(.semibold)
+                    .font(Font(AppFonts.regularBoldText))
                     .padding(.vertical, 10)
                 
-                BlueActionButton(navigationAction: $showReinoGolosinas, textButton: "Lola y Polo en:\nReino de las golosinas", width: widthScreen * 0.6, height: heightScreen * 0.07)
+                ForEach(cuentos) { cuento in
+                    Button(action: {
+                        index = cuento.id - 1
+                        showReinoGolosinas = true
+                    }) {
+                        Text(cuento.titulo)
+                            .font(Font(AppFonts.secondaryActionButtonText))
+                            .foregroundColor(.white)
+                            .frame(width: widthScreen * 0.6, height: heightScreen * 0.07)
+                            .background(Color("LightBlueColor"))
+                            .cornerRadius(15)
+                    }
                     .padding(.bottom, 20)
-                
-                BlueActionButton(navigationAction: $showBatallaSucia, textButton: "Lola y Polo en:\nUna batalla sucia", width: widthScreen * 0.6, height: heightScreen * 0.07)
+                }
                 
                 Spacer()
                 
@@ -68,6 +82,17 @@ struct LolaPoloView: View {
             .onTapGesture {
                 showMenu = false
             }
+            .overlay(
+                Rectangle()
+                    .fill(
+                        Color.primary.opacity(showMenu ? 0.1 : 0.0)
+                    )
+                    .onTapGesture {
+                        withAnimation {
+                            showMenu = false
+                        }
+                }
+            )
             
             MenuView(showMenu: $showMenu)
         }
